@@ -1,186 +1,45 @@
-/* =========================
-   GLOBAL RESET & BASE
-========================= */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MemeScanr – The fun way to clean your camera roll</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+   
+  </style>
+</head>
+   <link rel="stylesheet" href="/style.css">
 
-* {
-  box-sizing: border-box;
-}
+<body>
+  <div class="hero">
+    <h1>MemeScanr</h1>
+    <p>The fun way to clean up your camera roll.</p>
+    <p>Scan memes instantly. Delete duplicates. Hide private photos. Declutter your inbox. All in one beautifully simple app.</p>
+    <a href="#" class="btn" onclick="return false;">Coming Soon on the App Store</a>
+  </div>
 
-html, body {
-  margin: 0;
-  padding: 0;
-}
+  <section>
+    <h2>What MemeScanr Does</h2>
+    <ul>
+      <li>Detect memes automatically in your camera roll.</li>
+      <li>Clean up duplicates, blurry photos, and random screenshots.</li>
+      <li>Hide sensitive photos in a Face ID–locked vault.</li>
+      <li>Declutter your email inbox and fix duplicate contacts.</li>
+    </ul>
+  </section>
 
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-               Roboto, Helvetica, Arial, sans-serif;
-  background: radial-gradient(
-    circle at top,
-    #0b1225 0%,
-    #050816 60%
-  );
-  color: #f9fafb;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-}
+  <section>
+    <h2>About the Creator</h2>
+    <p>MemeScanr is built by Bridgette, an indie founder blending humor, design, and practical tools to help people take control of their digital lives.</p>
+  </section>
+</body>
+   <footer>
+  <p>
+    <a href="/privacy.html">Privacy Policy</a> |
+    <a href="/terms.html">Terms of Use</a> |
+    <a href="/support.html">Support</a> |
+    <a href="https://instagram.com/memescanr" target="_blank">Instagram</a>
+  </p>
+</footer>
 
-/* =========================
-   HERO SECTION
-========================= */
-
-.hero {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 2.5rem 1.5rem;
-}
-
-.hero h1 {
-  font-size: clamp(2.5rem, 6vw, 3.5rem);
-  font-weight: 700;
-  margin-bottom: 0.75rem;
-  letter-spacing: -0.02em;
-}
-
-.hero p {
-  max-width: 640px;
-  margin: 0.5rem auto;
-  font-size: 1.05rem;
-  color: #d1d5db;
-}
-
-/* =========================
-   BUTTONS
-========================= */
-
-.btn {
-  margin-top: 1.75rem;
-  padding: 0.85rem 1.75rem;
-  border-radius: 999px;
-  background: linear-gradient(135deg, #22c55e, #16a34a);
-  color: #052e16;
-  font-weight: 600;
-  font-size: 1rem;
-  text-decoration: none;
-  display: inline-block;
-  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
-  box-shadow: 0 8px 30px rgba(34, 197, 94, 0.35);
-}
-
-.btn:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 12px 40px rgba(34, 197, 94, 0.45);
-  opacity: 0.95;
-}
-
-/* =========================
-   CONTENT SECTIONS
-========================= */
-
-section {
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 3.5rem 1.5rem;
-}
-
-section h2 {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-  letter-spacing: -0.01em;
-}
-
-section p {
-  color: #d1d5db;
-}
-
-section ul {
-  margin-top: 1rem;
-  padding-left: 1.25rem;
-}
-
-section li {
-  margin-bottom: 0.5rem;
-  color: #e5e7eb;
-}
-
-/* =========================
-   LINKS
-========================= */
-
-a {
-  color: #22c55e;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-  margin-top: 4rem;
-  padding: 2rem 1.25rem;
-  text-align: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  color: #9ca3af;
-  font-size: 0.9rem;
-}
-
-footer p {
-  margin: 0.5rem 0;
-}
-
-footer a {
-  color: #22c55e;
-  margin: 0 0.75rem;
-  font-weight: 500;
-}
-
-footer a:hover {
-  opacity: 0.85;
-}
-
-/* =========================
-   PAGE CONTAINERS (Privacy / Support)
-========================= */
-
-main {
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 3rem 1.5rem;
-}
-
-main h1 {
-  font-size: 2.1rem;
-  margin-bottom: 1rem;
-}
-
-main h2 {
-  margin-top: 2rem;
-  font-size: 1.4rem;
-}
-
-main p,
-main li {
-  color: #d1d5db;
-}
-
-/* =========================
-   RESPONSIVE TWEAKS
-========================= */
-
-@media (max-width: 600px) {
-  .hero p {
-    font-size: 1rem;
-  }
-
-  section {
-    padding: 2.5rem 1.25rem;
-  }
-}
+</html>
