@@ -2,49 +2,168 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>MemeScanr – The fun way to clean your camera roll</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="/style.css">
+  <title>MemeScanr — AI-powered camera roll cleanup</title>
+  <meta name="description" content="MemeScanr scans your gallery, finds memes, duplicates, and clutter, and helps you clean up fast." />
+  <link rel="stylesheet" href="/style.css?v=1" />
 </head>
 
 <body>
-
-  <nav class="side-tabs">
-    <a href="/privacy.html">Privacy</a>
-    <a href="/terms.html">Terms</a>
-    <a href="/support.html">Support</a>
-    <a href="https://instagram.com/memescanr" target="_blank" rel="noopener">Instagram</a>
+  <!-- Side Tabs (Desktop) -->
+  <nav class="side-tabs" aria-label="Site navigation">
+    <a class="tab" href="/index.html" aria-current="page">Home</a>
+    <a class="tab" href="/privacy.html">Privacy</a>
+    <a class="tab" href="/terms.html">Terms</a>
+    <a class="tab" href="/support.html">Support</a>
+    <a class="tab" href="https://instagram.com/memescanr" target="_blank" rel="noopener">Instagram</a>
   </nav>
 
-  <div class="hero">
-    <h1>MemeScanr</h1>
-    <p>The fun way to clean up your camera roll.</p>
-    <p>Scan memes instantly. Delete duplicates. Hide private photos. Declutter your inbox. All in one beautifully simple app.</p>
-    <a href="#" class="btn" onclick="return false;">Coming Soon on the App Store</a>
-  </div>
+  <!-- Top Nav (Mobile) -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand-mini">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>MemeScanr</span>
+      </div>
 
-  <section>
-    <h2>What MemeScanr Does</h2>
-    <ul>
-      <li>Detect memes automatically in your camera roll.</li>
-      <li>Clean up duplicates, blurry photos, and random screenshots.</li>
-      <li>Hide sensitive photos in a Face ID–locked vault.</li>
-      <li>Declutter your email inbox and fix duplicate contacts.</li>
-    </ul>
-  </section>
+      <nav class="topbar-nav" aria-label="Mobile navigation">
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+        <a href="/support.html">Support</a>
+      </nav>
+    </div>
+  </header>
 
-  <section>
-    <h2>About the Creator</h2>
-    <p>MemeScanr is built by Bridgette, an indie founder blending humor, design, and practical tools to help people take control of their digital lives.</p>
-  </section>
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <div class="logo-wrap">
+          <!-- Replace this with your real camera logo file: /assets/logo.png -->
+          <!-- If you have it, uncomment the <img> and remove the .logo-placeholder -->
+          <!-- <img class="logo" src="/assets/logo.png" alt="MemeScanr logo" /> -->
+
+          <div class="logo-placeholder" role="img" aria-label="MemeScanr camera mascot logo placeholder">
+            <div class="logo-glow"></div>
+            <div class="logo-face">
+              <div class="cam-lens"></div>
+              <div class="cam-cap"></div>
+              <div class="cam-smile"></div>
+            </div>
+            <div class="sparkles" aria-hidden="true"></div>
+          </div>
+
+          <div class="logo-text">
+            <h1 class="title">MemeScanr</h1>
+            <div class="tagline">AI-POWERED CLEANUP</div>
+          </div>
+        </div>
+
+        <p class="kicker">Because your camera roll deserves therapy.</p>
+
+        <p class="subtitle">
+          MemeScanr scans your gallery, finds the memes you forgot you saved at 2 a.m., and helps you clean house like a responsible adult.
+          <br /><br />
+          Delete duplicates. Hide private photos. Rescue the good stuff.
+          <span class="subtitle-em">Your phone storage will finally breathe again.</span>
+        </p>
+
+        <div class="cta-row">
+          <a class="btn primary" href="#" aria-disabled="true">Coming Soon on the App Store</a>
+          <a class="btn ghost" href="/support.html">Get Support</a>
+        </div>
+
+        <div class="stats">
+          <div class="chip"><span class="chip-dot"></span> Fast scan</div>
+          <div class="chip"><span class="chip-dot"></span> Smart sorting</div>
+          <div class="chip"><span class="chip-dot"></span> Privacy-first</div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Feature Cards -->
+        <section class="cards" aria-label="What MemeScanr does">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🧠</div>
+            <h2>AI that actually gets it</h2>
+            <p>Detects meme-y chaos, duplicates, and “why do I have this” screenshots — then groups them so cleanup is quick.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🧹</div>
+            <h2>Clean in minutes</h2>
+            <p>Swipe away clutter, keep your favorites, and free up space without manually scrolling for hours.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🔒</div>
+            <h2>Private stuff stays private</h2>
+            <p>Hide sensitive photos into a “vault-style” area (so you’re not jumpscared by your own camera roll).</p>
+          </article>
+        </section>
+
+        <!-- Big “Fun” section -->
+        <section class="big-panel" aria-label="How it feels">
+          <div class="big-panel-inner">
+            <h2>What you’ll feel after using MemeScanr</h2>
+            <ul>
+              <li>✨ Less chaos</li>
+              <li>📦 More space</li>
+              <li>😮‍💨 Fewer “Storage Almost Full” popups</li>
+              <li>😇 Mildly proud of yourself</li>
+            </ul>
+            <p class="fine">
+              No promises about the memes your friends send you tomorrow though.
+            </p>
+          </div>
+        </section>
+
+        <!-- Page links area (in addition to footer) -->
+        <section class="link-grid" aria-label="Quick links">
+          <a class="link-tile" href="/privacy.html">
+            <span class="link-title">Privacy</span>
+            <span class="link-sub">How your data is handled</span>
+          </a>
+
+          <a class="link-tile" href="/terms.html">
+            <span class="link-title">Terms</span>
+            <span class="link-sub">The important fine print</span>
+          </a>
+
+          <a class="link-tile" href="/support.html">
+            <span class="link-title">Support</span>
+            <span class="link-sub">Help, FAQs, contact</span>
+          </a>
+
+          <a class="link-tile" href="https://instagram.com/memescanr" target="_blank" rel="noopener">
+            <span class="link-title">Instagram</span>
+            <span class="link-sub">Memes, updates, vibes</span>
+          </a>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="/privacy.html">Privacy</a>
+        <span class="sep">•</span>
+        <a href="/terms.html">Terms</a>
+        <span class="sep">•</span>
+        <a href="/support.html">Support</a>
+        <span class="sep">•</span>
+        <a href="https://instagram.com/memescanr" target="_blank" rel="noopener">Instagram</a>
+      </div>
+
+      <div class="footer-copy">© <span id="year"></span> MemeScanr. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
-   <footer>
-  <p>
-    <a href="/privacy.html">Privacy Policy</a> |
-    <a href="/terms.html">Terms of Use</a> |
-    <a href="/support.html">Support</a> |
-    <a href="https://instagram.com/memescanr" target="_blank">Instagram</a>
-  </p>
-</footer>
-
 </html>
