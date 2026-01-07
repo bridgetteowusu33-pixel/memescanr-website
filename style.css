@@ -322,6 +322,28 @@ section li {
 .page-panel h2 {
   margin-top: 28px;
 }
+/* =========================
+   APP STORE PRIVACY TRUST BLOCK
+========================= */
+
+.privacy-trust {
+  max-width: 760px;
+  margin: 60px auto 40px;
+  padding: 28px 24px;
+  text-align: center;
+  background: rgba(0,0,0,0.22);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 24px;
+}
+
+.privacy-trust h2 {
+  margin-top: 0;
+}
+
+.privacy-trust p {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
 
 /* =========================
    FOOTER
