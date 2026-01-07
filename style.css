@@ -585,4 +585,19 @@ body::before {
   from { transform: translateY(0); }
   to { transform: translateY(-120vh); }
 }
+.card:hover,
+.link-tile:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 25px 60px rgba(0,0,0,.4);
+}
+
+.logo-placeholder {
+  animation: floatLogo 6s ease-in-out infinite;
+}
+
+@keyframes floatLogo {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
 
