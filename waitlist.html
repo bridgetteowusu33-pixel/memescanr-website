@@ -2,25 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>MemeScanr – TestFlight Beta</title>
+  <title>MemeScanr Waitlist – Get Early Access</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Favicon -->
   <link rel="icon" href="/assets/favicon.png" />
-  <link rel="stylesheet" href="/style.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/style.css?v=4" />
 </head>
 
 <body>
 
+<!-- =========================
+     SIDE TABS NAVIGATION
+========================== -->
 <nav class="side-tabs" aria-label="Site navigation">
   <a class="tab active" href="/index.html">
     <span class="icon">🏠</span><span>Home</span>
-  </a>
-
-  <a class="tab" href="/testflight.html">
-    <span class="icon">🧪</span><span>TestFlight</span>
-  </a>
-
-  <a class="tab" href="/faq.html">
-    <span class="icon">❓</span><span>FAQ</span>
   </a>
 
   <a class="tab" href="/privacy.html">
@@ -35,39 +34,155 @@
     <span class="icon">🛠️</span><span>Support</span>
   </a>
 
+  <a class="tab" href="/waitlist.html">
+    <span class="icon">🧪</span><span>Waitlist</span>
+  </a>
+
+  <a class="tab" href="/faq.html">
+    <span class="icon">❓</span><span>FAQ</span>
+  </a>
+
   <a class="tab" href="https://instagram.com/memescanr" target="_blank" rel="noopener">
-    <img src="/assets/ig-logo.png" alt="Instagram" class="ig-icon" />
+    <img src="/assets/instagram.png" alt="Instagram" class="ig-icon" />
     <span>IG</span>
   </a>
 </nav>
 
-<main class="main-content">
-  <section class="hero">
-    <img src="/assets/memescanr-hero.png" class="hero-mascot" alt="MemeScanr mascot" />
+<!-- =========================
+     MAIN CONTENT
+========================== -->
+<main class="page">
 
-    <h1>Join the MemeScanr Beta</h1>
+  <div class="page-panel" style="text-align:center;">
 
-    <p class="tagline">
-      Help us fight camera-roll chaos before launch.
+    <img
+      src="/assets/memescanr-hero.png"
+      alt="MemeScanr mascot"
+      style="max-width:120px; margin-bottom:14px;"
+    />
+
+    <h1>Join the MemeScanr Waitlist 📬</h1>
+
+    <p style="font-size:1.15rem;">
+      Your camera roll is living its best chaotic life.
+      <br><strong>We’re about to clean it up.</strong>
     </p>
 
-    <p class="summary">
-      TestFlight users get early access, experimental features,
-      and the satisfaction of deleting memes responsibly.
-      Bugs may exist. Memes definitely do.
+    <p>
+      MemeScanr is launching soon, and waitlist members get first dibs.
+      We’re talking early access, beta invites, and bragging rights for
+      finally deleting that meme you saved “just in case.”
     </p>
 
-    <div class="cta-row">
-      <a href="https://testflight.apple.com/" class="btn primary" target="_blank">
-        Join on TestFlight
+    <p>
+      ✨ No spam.  
+      ✨ No cringe emails.  
+      ✨ Just launch updates and early access.
+    </p>
+
+    <!-- =========================
+         WAITLIST FORM
+    ========================== -->
+    <form
+      name="waitlist"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      class="waitlist-form"
+      style="margin-top:24px;"
+    >
+      <input type="hidden" name="form-name" value="waitlist" />
+
+      <p style="display:none;">
+        <label>Don’t fill this out if you’re human:
+          <input name="bot-field" />
+        </label>
+      </p>
+
+      <input
+        type="email"
+        name="email"
+        placeholder="Drop your email here 👇"
+        required
+      />
+
+      <button type="submit" class="btn primary">
+        Save Me From My Camera Roll
+      </button>
+    </form>
+
+    <p style="margin-top:14px; font-size:.9rem; opacity:.75;">
+      We’ll email you when access opens 🚀
+    </p>
+
+    <hr style="margin:36px 0; border:none; border-top:1px solid rgba(255,255,255,.12);" />
+
+    <!-- =========================
+         TESTFLIGHT INFO
+    ========================== -->
+    <h2>Want to test it before launch? 🧪</h2>
+
+    <p>
+      If you’re the adventurous type and enjoy poking new apps before they’re
+      fully released, you can join our TestFlight beta.
+    </p>
+
+    <p>
+      ⚠️ Heads up: TestFlight builds may have bugs, weird behavior,
+      or features that disappear without warning.
+      That’s part of the fun.
+    </p>
+
+    <div style="margin-top:20px;">
+      <a
+        href="https://testflight.apple.com/"
+        target="_blank"
+        rel="noopener"
+        class="btn"
+        style="background:rgba(255,255,255,.1); color:#fff;"
+      >
+        Learn About TestFlight
       </a>
-
-      <span class="coming-soon">
-        Limited slots · iOS only
-      </span>
     </div>
-  </section>
+
+    <p style="margin-top:12px; font-size:.9rem; opacity:.7;">
+      TestFlight invites are sent to waitlist members first.
+    </p>
+
+  </div>
+
 </main>
+
+<!-- =========================
+     FOOTER
+========================== -->
+<footer>
+  <p>
+    <a href="/privacy.html">Privacy</a> ·
+    <a href="/terms.html">Terms</a> ·
+    <a href="/support.html">Support</a> ·
+    <a href="https://instagram.com/memescanr" target="_blank" rel="noopener">Instagram</a>
+  </p>
+  <p>© 2026 MemeScanr. All rights reserved.</p>
+</footer>
+
+<!-- =========================
+     FLOATING FUN
+========================== -->
+<div class="particles"></div>
+
+<script>
+  const emojis = ["😂","📸","🧹","🔥","✨","😎"];
+  const container = document.querySelector(".particles");
+  for (let i = 0; i < 10; i++) {
+    const e = document.createElement("span");
+    e.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+    e.style.left = Math.random() * 100 + "vw";
+    e.style.animationDuration = 8 + Math.random() * 10 + "s";
+    e.style.fontSize = 14 + Math.random() * 18 + "px";
+    container.appendChild(e);
+  }
+</script>
 
 </body>
 </html>
