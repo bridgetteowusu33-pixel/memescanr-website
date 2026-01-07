@@ -9,206 +9,222 @@
   <link rel="icon" href="/assets/favicon.png" />
 
   <!-- Styles -->
-  <link rel="stylesheet" href="/style.css?v=5" />
+  <link rel="stylesheet" href="/style.css?v=7" />
 </head>
 
 <body>
 
-  <!-- =========================
-       SIDE TABS NAVIGATION
-  ========================== -->
-  <nav class="side-tabs" aria-label="Site navigation">
-    <a class="tab active" href="/index.html">
-      <span class="icon">🏠</span><span>Home</span>
-    </a>
+<!-- =========================
+     SIDE TABS NAVIGATION
+========================== -->
+<nav class="side-tabs" aria-label="Site navigation">
+  <a class="tab active" href="/index.html">
+    <span class="icon">🏠</span><span>Home</span>
+  </a>
 
-    <a class="tab" href="/testflight.html">
-      <span class="icon">🧪</span><span>TestFlight</span>
-    </a>
+  <a class="tab" href="/testflight.html">
+    <span class="icon">🧪</span><span>TestFlight</span>
+  </a>
 
-    <a class="tab" href="/faq.html">
-      <span class="icon">❓</span><span>FAQ</span>
-    </a>
+  <a class="tab" href="/faq.html">
+    <span class="icon">❓</span><span>FAQ</span>
+  </a>
 
-    <a class="tab" href="/privacy.html">
-      <span class="icon">🔒</span><span>Privacy</span>
-    </a>
+  <a class="tab" href="/privacy.html">
+    <span class="icon">🔒</span><span>Privacy</span>
+  </a>
 
-    <a class="tab" href="/terms.html">
-      <span class="icon">📜</span><span>Terms</span>
-    </a>
+  <a class="tab" href="/terms.html">
+    <span class="icon">📜</span><span>Terms</span>
+  </a>
 
-    <a class="tab" href="/support.html">
-      <span class="icon">🛠️</span><span>Support</span>
-    </a>
+  <a class="tab" href="/support.html">
+    <span class="icon">🛠️</span><span>Support</span>
+  </a>
 
-    <a
-      class="tab"
-      href="https://instagram.com/memescanr"
-      target="_blank"
-      rel="noopener"
-    >
-      <img src="/assets/ig-logo.png" alt="Instagram" class="ig-icon" />
-      <span>IG</span>
-    </a>
-  </nav>
+  <a class="tab" href="https://instagram.com/memescanr" target="_blank" rel="noopener">
+    <img src="/assets/ig-logo.png" alt="Instagram" class="ig-icon" />
+    <span>IG</span>
+  </a>
+</nav>
 
-  <!-- =========================
-       HERO
-  ========================== -->
-  <div class="hero">
+<!-- =========================
+     HERO SECTION
+========================== -->
+<div class="hero">
+
+  <img
+    src="/assets/memescanr-hero.png"
+    alt="MemeScanr camera mascot"
+    class="hero-logo"
+  />
+
+  <h1>MemeScanr</h1>
+
+  <p class="tagline">
+    Because your camera roll deserves therapy.
+  </p>
+
+  <p class="description">
+    MemeScanr scans your gallery, finds the memes you forgot you saved at 2 a.m.,
+    and helps you clean house like a responsible adult.
+    <br><br>
+    Delete duplicates. Hide private photos. Rescue the good stuff.
+    <br>
+    <strong>Your phone storage will finally breathe again.</strong>
+  </p>
+
+  <!-- App Store Badge -->
+  <div style="margin:22px 0;">
     <img
-      src="/assets/memescanr-hero.png"
-      alt="MemeScanr camera mascot"
-      class="hero-logo"
+      src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+      alt="Download on the App Store"
+      style="height:54px;opacity:.4"
     />
-
-    <h1>MemeScanr</h1>
-
-    <p class="tagline">
-      Because your camera roll deserves therapy.
+    <p style="font-size:.9rem;opacity:.75;">
+      Coming soon on the App Store
     </p>
-
-    <p class="description">
-      MemeScanr scans your gallery, finds the memes you forgot you saved at 2 a.m.,
-      and helps you clean house like a responsible adult.
-      <br><br>
-      Delete duplicates. Hide private photos. Rescue the good stuff.
-      <br>
-      <strong>Your phone storage will finally breathe again.</strong>
-    </p>
-
-    <!-- App Store Badge -->
-    <div style="margin:22px 0;">
-      <img
-        src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-        alt="Download on the App Store"
-        style="height:54px;opacity:.4"
-      />
-      <p style="font-size:.9rem;opacity:.75">
-        Coming soon on the App Store
-      </p>
-    </div>
-
-    <!-- WAITLIST FORM -->
-    <form
-      name="waitlist"
-      method="POST"
-      data-netlify="true"
-      netlify-honeypot="bot-field"
-      class="waitlist-form"
-    >
-      <input type="hidden" name="form-name" value="waitlist" />
-
-      <p style="display:none;">
-        <label>
-          Don’t fill this out if you’re human:
-          <input name="bot-field" />
-        </label>
-      </p>
-
-      <input
-        type="email"
-        name="email"
-        placeholder="Enter your email for launch updates"
-        required
-      />
-
-      <button type="submit" class="btn primary">
-        Join the Waitlist
-      </button>
-    </form>
   </div>
 
-  <!-- =========================
-       IPHONE MOCKUP
-  ========================== -->
-  <section>
-    <h2>What it looks like 👀</h2>
+  <!-- WAITLIST FORM -->
+  <form
+    name="waitlist"
+    method="POST"
+    data-netlify="true"
+    netlify-honeypot="bot-field"
+    class="waitlist-form"
+  >
+    <input type="hidden" name="form-name" value="waitlist" />
 
-    <div style="display:flex; justify-content:center; margin-top:20px;">
+    <p style="display:none;">
+      <label>
+        Don’t fill this out if you’re human:
+        <input name="bot-field" />
+      </label>
+    </p>
+
+    <input
+      type="email"
+      name="email"
+      placeholder="Enter your email for launch updates"
+      required
+    />
+
+    <button type="submit" class="btn primary">
+      Join the Waitlist
+    </button>
+  </form>
+</div>
+
+<!-- =========================
+     APP PREVIEW (REAL SCREENSHOTS)
+========================== -->
+<section>
+  <h2>What it looks like 👀</h2>
+
+  <div style="text-align:center; margin-top:14px;">
+    <button class="btn primary" id="toggleShot" type="button">
+      Switch Screenshot
+    </button>
+    <p class="description" style="font-size:.95rem; margin-top:10px;">
+      Tap to preview different screens
+    </p>
+  </div>
+
+  <div style="display:flex; justify-content:center; margin-top:20px;">
+    <div
+      style="
+        width:260px;
+        height:520px;
+        border-radius:40px;
+        background:linear-gradient(180deg,#111827,#020617);
+        border:4px solid #1f2937;
+        box-shadow:0 30px 80px rgba(0,0,0,.6);
+        position:relative;
+        overflow:hidden;
+      "
+    >
+
+      <!-- SCREENSHOT -->
+      <img
+        id="phoneShot"
+        src="/assets/app-screenshot-1.png"
+        alt="MemeScanr app screenshot"
+        style="
+          position:absolute;
+          inset:12px;
+          width:calc(100% - 24px);
+          height:calc(100% - 24px);
+          border-radius:28px;
+          object-fit:cover;
+        "
+      />
+
+      <!-- NOTCH -->
       <div
         style="
-          width:260px;
-          height:520px;
-          border-radius:40px;
-          background:linear-gradient(180deg,#111827,#020617);
-          border:4px solid #1f2937;
-          box-shadow:0 30px 80px rgba(0,0,0,.6);
-          position:relative;
-          overflow:hidden;
+          position:absolute;
+          top:0;
+          left:50%;
+          transform:translateX(-50%);
+          width:120px;
+          height:28px;
+          background:#020617;
+          border-radius:0 0 16px 16px;
+          z-index:2;
         "
-      >
-        <div
-          style="
-            position:absolute;
-            inset:12px;
-            border-radius:28px;
-            background:
-              radial-gradient(circle at 30% 20%, rgba(59,211,255,.25), transparent 45%),
-              radial-gradient(circle at 70% 30%, rgba(255,204,77,.25), transparent 45%),
-              #020617;
-            display:flex;
-            align-items:center;
-            justify-content:center;
-            color:#9ca3af;
-            font-weight:700;
-            text-align:center;
-            padding:20px;
-          "
-        >
-          App screenshots coming soon 📱
-        </div>
+      ></div>
 
-        <div
-          style="
-            position:absolute;
-            top:0;
-            left:50%;
-            transform:translateX(-50%);
-            width:120px;
-            height:28px;
-            background:#020617;
-            border-radius:0 0 16px 16px;
-          "
-        ></div>
-      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- =========================
-       FOOTER
-  ========================== -->
-  <footer>
-    <p>
-      <a href="/privacy.html">Privacy Policy</a> ·
-      <a href="/terms.html">Terms</a> ·
-      <a href="/support.html">Support</a> ·
-      <a href="https://instagram.com/memescanr" target="_blank" rel="noopener">
-        Instagram
-      </a>
-    </p>
-    <p>© 2026 MemeScanr. All rights reserved.</p>
-  </footer>
+<!-- =========================
+     FOOTER
+========================== -->
+<footer>
+  <p>
+    <a href="/privacy.html">Privacy Policy</a> ·
+    <a href="/terms.html">Terms</a> ·
+    <a href="/support.html">Support</a> ·
+    <a href="https://instagram.com/memescanr" target="_blank" rel="noopener">
+      Instagram
+    </a>
+  </p>
+  <p>© 2026 MemeScanr. All rights reserved.</p>
+</footer>
 
-  <!-- =========================
-       FLOATING FUN
-  ========================== -->
-  <div class="particles"></div>
+<!-- =========================
+     FLOATING EMOJIS
+========================== -->
+<div class="particles"></div>
 
-  <script>
-    const emojis = ["😂","✨","📸","🧹","😎","🔥"];
-    const container = document.querySelector(".particles");
+<script>
+  // Floating emoji animation
+  const emojis = ["😂","✨","📸","🧹","😎","🔥"];
+  const container = document.querySelector(".particles");
 
-    for (let i = 0; i < 14; i++) {
-      const e = document.createElement("span");
-      e.textContent = emojis[Math.floor(Math.random() * emojis.length)];
-      e.style.left = Math.random() * 100 + "vw";
-      e.style.animationDuration = 8 + Math.random() * 10 + "s";
-      e.style.fontSize = 14 + Math.random() * 18 + "px";
-      container.appendChild(e);
-    }
-  </script>
+  for (let i = 0; i < 14; i++) {
+    const e = document.createElement("span");
+    e.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+    e.style.left = Math.random() * 100 + "vw";
+    e.style.animationDuration = 8 + Math.random() * 10 + "s";
+    e.style.fontSize = 14 + Math.random() * 18 + "px";
+    container.appendChild(e);
+  }
+
+  // Screenshot toggle
+  const screenshots = [
+    "/assets/app-screenshot-1.png",
+    "/assets/app-screenshot-2.png"
+  ];
+  let index = 0;
+
+  document.getElementById("toggleShot").addEventListener("click", () => {
+    index = (index + 1) % screenshots.length;
+    document.getElementById("phoneShot").src = screenshots[index];
+  });
+</script>
 
 </body>
 </html>
