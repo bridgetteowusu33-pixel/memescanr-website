@@ -2,193 +2,205 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <title>MemeScanr – Because your camera roll deserves therapy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MemeScanr — AI-powered camera roll cleanup</title>
-  <meta name="description" content="MemeScanr scans your gallery, finds memes, duplicates, and clutter, and helps you clean up fast." />
-  <link rel="stylesheet" href="/style.css?v=1" />
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="/style.css?v=3">
 </head>
-<div class="particles"></div>
-
-<script>
-  const emojis = ["😂","✨","📸","🧹","😎","🔥"];
-  const container = document.querySelector(".particles");
-
-  for (let i = 0; i < 14; i++) {
-    const e = document.createElement("span");
-    e.textContent = emojis[Math.floor(Math.random()*emojis.length)];
-    e.style.left = Math.random()*100 + "vw";
-    e.style.animationDuration = 8 + Math.random()*10 + "s";
-    e.style.fontSize = 14 + Math.random()*18 + "px";
-    container.appendChild(e);
-  }
-</script>
 
 <body>
-<nav class="side-tabs" aria-label="Site navigation">
-  <a class="tab active" href="/index.html">
-    <span class="icon">🏠</span><span>Home</span>
-  </a>
-  <a class="tab" href="/privacy.html">
-    <span class="icon">🔒</span><span>Privacy</span>
-  </a>
-  <a class="tab" href="/terms.html">
-    <span class="icon">📜</span><span>Terms</span>
-  </a>
-  <a class="tab" href="/support.html">
-    <span class="icon">🛠️</span><span>Support</span>
-  </a>
-  <a class="tab" href="https://instagram.com/memescanr" target="_blank">
-    <span class="icon">📸</span><span>IG</span>
-  </a>
-</nav>
 
+  <!-- =========================
+       SIDE TABS NAVIGATION
+  ========================== -->
+  <nav class="side-tabs" aria-label="Site navigation">
+    <a class="tab active" href="/index.html">
+      <span class="icon">🏠</span><span>Home</span>
+    </a>
+    <a class="tab" href="/privacy.html">
+      <span class="icon">🔒</span><span>Privacy</span>
+    </a>
+    <a class="tab" href="/terms.html">
+      <span class="icon">📜</span><span>Terms</span>
+    </a>
+    <a class="tab" href="/support.html">
+      <span class="icon">🛠️</span><span>Support</span>
+    </a>
+    <a class="tab" href="https://instagram.com/memescanr" target="_blank" rel="noopener">
+      <span class="icon">📸</span><span>IG</span>
+    </a>
+  </nav>
 
-  <!-- Top Nav (Mobile) -->
-  <header class="topbar">
-    <div class="topbar-inner">
-      <div class="brand-mini">
-        <span class="brand-dot" aria-hidden="true"></span>
-        <span>MemeScanr</span>
-      </div>
+  <!-- =========================
+       HERO SECTION
+  ========================== -->
+  <div class="hero">
 
-      <nav class="topbar-nav" aria-label="Mobile navigation">
-        <a href="/privacy.html">Privacy</a>
-        <a href="/terms.html">Terms</a>
-        <a href="/support.html">Support</a>
-      </nav>
+    <!-- HERO IMAGE / LOGO -->
+    <!-- Replace with your real image when ready -->
+    <img
+      src="/assets/memescanr-hero.png"
+      alt="MemeScanr camera mascot"
+      class="hero-logo"
+    />
+
+    <h1>MemeScanr</h1>
+
+    <p class="tagline">
+      Because your camera roll deserves therapy.
+    </p>
+
+    <p class="description">
+      MemeScanr scans your gallery, finds the memes you forgot you saved at 2 a.m.,
+      and helps you clean house like a responsible adult.
+      <br><br>
+      Delete duplicates. Hide private photos. Rescue the good stuff.
+      <br>
+      <strong>Your phone storage will finally breathe again.</strong>
+    </p>
+
+    <!-- APP STORE BADGE (DISABLED UNTIL LIVE) -->
+    <div style="margin: 22px 0;">
+      <img
+        src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+        alt="Download on the App Store"
+        style="height: 54px; opacity: 0.4;"
+      />
+      <p style="font-size: 0.9rem; opacity: 0.75;">
+        Coming soon on the App Store
+      </p>
     </div>
-  </header>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-bg" aria-hidden="true"></div>
+    <!-- WAITLIST FORM (NETLIFY) -->
+    <form
+      name="waitlist"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      class="waitlist-form"
+    >
+      <input type="hidden" name="form-name" value="waitlist">
 
-      <div class="hero-inner">
-        <div class="logo-wrap">
-          <!-- Replace this with your real camera logo file: /assets/logo.png -->
-          <!-- If you have it, uncomment the <img> and remove the .logo-placeholder -->
-          <!-- <img class="logo" src="/assets/logo.png" alt="MemeScanr logo" /> -->
+      <p style="display:none;">
+        <label>Don’t fill this out if you’re human:
+          <input name="bot-field" />
+        </label>
+      </p>
 
-          <div class="logo-placeholder" role="img" aria-label="MemeScanr camera mascot logo placeholder">
-            <div class="logo-glow"></div>
-            <div class="logo-face">
-              <div class="cam-lens"></div>
-              <div class="cam-cap"></div>
-              <div class="cam-smile"></div>
-            </div>
-            <div class="sparkles" aria-hidden="true"></div>
-          </div>
+      <input
+        type="email"
+        name="email"
+        placeholder="Enter your email for early access"
+        required
+      />
 
-          <div class="logo-text">
-            <h1 class="title">MemeScanr</h1>
-            <div class="tagline">AI-POWERED CLEANUP</div>
-          </div>
+      <button type="submit" class="btn primary">
+        Join the Waitlist
+      </button>
+    </form>
+  </div>
+
+  <!-- =========================
+       IPHONE MOCKUP SECTION
+  ========================== -->
+  <section>
+    <h2>What it looks like 👀</h2>
+
+    <div style="display:flex; justify-content:center; margin-top:20px;">
+      <div style="
+        width: 260px;
+        height: 520px;
+        border-radius: 40px;
+        background: linear-gradient(180deg, #111827, #020617);
+        border: 4px solid #1f2937;
+        box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+        position: relative;
+        overflow: hidden;
+      ">
+        <!-- SCREEN PLACEHOLDER -->
+        <div style="
+          position:absolute;
+          inset:12px;
+          border-radius: 28px;
+          background:
+            radial-gradient(circle at 30% 20%, rgba(59,211,255,0.25), transparent 45%),
+            radial-gradient(circle at 70% 30%, rgba(255,204,77,0.25), transparent 45%),
+            #020617;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          color:#9ca3af;
+          font-weight:700;
+          text-align:center;
+          padding: 20px;
+        ">
+          Your app screenshots<br>
+          will go here 📱
         </div>
 
-        <p class="kicker">Because your camera roll deserves therapy.</p>
-
-        <p class="subtitle">
-          MemeScanr scans your gallery, finds the memes you forgot you saved at 2 a.m., and helps you clean house like a responsible adult.
-          <br /><br />
-          Delete duplicates. Hide private photos. Rescue the good stuff.
-          <span class="subtitle-em">Your phone storage will finally breathe again.</span>
-        </p>
-
-        <div class="cta-row">
-          <a class="btn primary" href="#" aria-disabled="true">Coming Soon on the App Store</a>
-          <a class="btn ghost" href="/support.html">Get Support</a>
-        </div>
-
-        <div class="stats">
-          <div class="chip"><span class="chip-dot"></span> Fast scan</div>
-          <div class="chip"><span class="chip-dot"></span> Smart sorting</div>
-          <div class="chip"><span class="chip-dot"></span> Privacy-first</div>
-        </div>
-
-        <div class="divider"></div>
-
-        <!-- Feature Cards -->
-        <section class="cards" aria-label="What MemeScanr does">
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">🧠</div>
-            <h2>AI that actually gets it</h2>
-            <p>Detects meme-y chaos, duplicates, and “why do I have this” screenshots — then groups them so cleanup is quick.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">🧹</div>
-            <h2>Clean in minutes</h2>
-            <p>Swipe away clutter, keep your favorites, and free up space without manually scrolling for hours.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">🔒</div>
-            <h2>Private stuff stays private</h2>
-            <p>Hide sensitive photos into a “vault-style” area (so you’re not jumpscared by your own camera roll).</p>
-          </article>
-        </section>
-
-        <!-- Big “Fun” section -->
-        <section class="big-panel" aria-label="How it feels">
-          <div class="big-panel-inner">
-            <h2>What you’ll feel after using MemeScanr</h2>
-            <ul>
-              <li>✨ Less chaos</li>
-              <li>📦 More space</li>
-              <li>😮‍💨 Fewer “Storage Almost Full” popups</li>
-              <li>😇 Mildly proud of yourself</li>
-            </ul>
-            <p class="fine">
-              No promises about the memes your friends send you tomorrow though.
-            </p>
-          </div>
-        </section>
-
-        <!-- Page links area (in addition to footer) -->
-        <section class="link-grid" aria-label="Quick links">
-          <a class="link-tile" href="/privacy.html">
-            <span class="link-title">Privacy</span>
-            <span class="link-sub">How your data is handled</span>
-          </a>
-
-          <a class="link-tile" href="/terms.html">
-            <span class="link-title">Terms</span>
-            <span class="link-sub">The important fine print</span>
-          </a>
-
-          <a class="link-tile" href="/support.html">
-            <span class="link-title">Support</span>
-            <span class="link-sub">Help, FAQs, contact</span>
-          </a>
-
-          <a class="link-tile" href="https://instagram.com/memescanr" target="_blank" rel="noopener">
-            <span class="link-title">Instagram</span>
-            <span class="link-sub">Memes, updates, vibes</span>
-          </a>
-        </section>
+        <!-- NOTCH -->
+        <div style="
+          position:absolute;
+          top:0;
+          left:50%;
+          transform:translateX(-50%);
+          width:120px;
+          height:28px;
+          background:#020617;
+          border-radius: 0 0 16px 16px;
+        "></div>
       </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-links">
-        <a href="/privacy.html">Privacy</a>
-        <span class="sep">•</span>
-        <a href="/terms.html">Terms</a>
-        <span class="sep">•</span>
-        <a href="/support.html">Support</a>
-        <span class="sep">•</span>
-        <a href="https://instagram.com/memescanr" target="_blank" rel="noopener">Instagram</a>
-      </div>
-
-      <div class="footer-copy">© <span id="year"></span> MemeScanr. All rights reserved.</div>
     </div>
+  </section>
+
+  <!-- =========================
+       FEATURES
+  ========================== -->
+  <section>
+    <h2>Why you’ll love it</h2>
+    <ul>
+      <li>😂 Automatically detects meme overload</li>
+      <li>🧹 Cleans up duplicates and clutter fast</li>
+      <li>🔐 Keeps private photos discreet</li>
+      <li>⚡ No endless scrolling</li>
+      <li>😌 No regrets after deleting</li>
+    </ul>
+  </section>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer>
+    <p>
+      <a href="/privacy.html">Privacy Policy</a> ·
+      <a href="/terms.html">Terms</a> ·
+      <a href="/support.html">Support</a> ·
+      <a href="https://instagram.com/memescanr" target="_blank" rel="noopener">
+        Instagram
+      </a>
+    </p>
+    <p>© 2026 MemeScanr. All rights reserved.</p>
   </footer>
 
+  <!-- =========================
+       FLOATING FUN PARTICLES
+  ========================== -->
+  <div class="particles"></div>
+
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    const emojis = ["😂","✨","📸","🧹","😎","🔥"];
+    const container = document.querySelector(".particles");
+
+    for (let i = 0; i < 14; i++) {
+      const e = document.createElement("span");
+      e.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+      e.style.left = Math.random() * 100 + "vw";
+      e.style.animationDuration = 8 + Math.random() * 10 + "s";
+      e.style.fontSize = 14 + Math.random() * 18 + "px";
+      container.appendChild(e);
+    }
   </script>
+
 </body>
 </html>
