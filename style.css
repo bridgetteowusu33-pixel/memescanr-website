@@ -573,3 +573,16 @@ body::before {
   from { transform: scale(1); opacity: .9; }
   to { transform: scale(1.05); opacity: 1; }
 }
+.particles span {
+  position: fixed;
+  bottom: -40px;
+  animation: floatUp linear infinite;
+  opacity: .55;
+  pointer-events: none;
+}
+
+@keyframes floatUp {
+  from { transform: translateY(0); }
+  to { transform: translateY(-120vh); }
+}
+
