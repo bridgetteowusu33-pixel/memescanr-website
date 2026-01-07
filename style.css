@@ -123,6 +123,16 @@ a:hover {
     display: none;
   }
 }
+/* =========================
+   IG ICON IN SIDE TABS
+========================= */
+
+.ig-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  filter: brightness(1.1);
+}
 
 /* =========================
    HERO SECTION
