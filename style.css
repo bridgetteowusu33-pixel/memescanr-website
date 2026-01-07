@@ -123,7 +123,6 @@ a:hover {
     display: none;
   }
 }
-
 /* =========================
    INSTAGRAM ICON FIX
 ========================= */
@@ -147,16 +146,6 @@ a:hover {
     drop-shadow(0 0 10px rgba(255,200,0,0.4));
 }
 
-/* =========================
-   IG ICON IN SIDE TABS
-========================= */
-
-.ig-icon {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
-  filter: brightness(1.1);
-}
 
 /* =========================
    HERO SECTION
