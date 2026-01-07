@@ -1,0 +1,121 @@
+/* =========================
+   GLOBAL RESET & BASE
+========================= */
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Helvetica, Arial, sans-serif;
+  background: radial-gradient(circle at top, #0b1225 0%, #050816 60%);
+  color: #f9fafb;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  animation: fadeUp 0.8s ease-out both;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.hero p {
+  max-width: 640px;
+  margin: 0.6rem auto;
+  color: #d1d5db;
+  font-size: 1.05rem;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn {
+  margin-top: 1.75rem;
+  padding: 0.9rem 1.8rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #052e16;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(34,197,94,0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 40px rgba(34,197,94,0.45);
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section, main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 3.5rem 1.5rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+ul { padding-left: 1.2rem; }
+
+li { margin-bottom: 0.5rem; }
+
+/* =========================
+   LINKS
+========================= */
+
+a { color: #22c55e; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  margin-top: 4rem;
+  padding: 2rem 1.25rem;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+footer a {
+  margin: 0 0.75rem;
+  font-weight: 500;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
