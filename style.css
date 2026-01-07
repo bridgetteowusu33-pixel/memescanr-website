@@ -125,6 +125,29 @@ a:hover {
 }
 
 /* =========================
+   INSTAGRAM ICON FIX
+========================= */
+
+.side-tabs .tab img.ig-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 0 4px rgba(255,255,255,0.25));
+}
+
+/* Make it slightly larger on hover */
+.side-tabs .tab:hover img.ig-icon {
+  transform: scale(1.15);
+}
+
+.side-tabs .tab:hover img.ig-icon {
+  filter:
+    drop-shadow(0 0 6px rgba(255,0,200,0.6))
+    drop-shadow(0 0 10px rgba(255,200,0,0.4));
+}
+
+/* =========================
    IG ICON IN SIDE TABS
 ========================= */
 
