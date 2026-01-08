@@ -5,280 +5,221 @@
   <title>MemeScanr – Because your camera roll deserves therapy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Favicon -->
-  <link rel="icon" href="/assets/favicon.png" />
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="/style.css?v=7" />
+  <!-- MAIN STYLES -->
+  <link rel="stylesheet" href="/style.css?v=5">
 </head>
 
 <body>
 
-<!-- =========================
-     SIDE TABS NAVIGATION
-========================== -->
-<nav class="side-tabs" aria-label="Site navigation">
-  <a class="tab active" href="/index.html">
-    <span class="icon">🏠</span><span>Home</span>
-  </a>
+  <!-- =========================
+       SIDE TABS NAVIGATION
+  ========================== -->
+  <nav class="side-tabs" aria-label="Site navigation">
+    <a class="tab active" href="/index.html">
+      <span class="icon">🏠</span><span>Home</span>
+    </a>
+    <a class="tab" href="/privacy.html">
+      <span class="icon">🔒</span><span>Privacy</span>
+    </a>
+    <a class="tab" href="/terms.html">
+      <span class="icon">📜</span><span>Terms</span>
+    </a>
+    <a class="tab" href="/support.html">
+      <span class="icon">🛠️</span><span>Support</span>
+    </a>
+    <a class="tab" href="https://instagram.com/memescanr" target="_blank" rel="noopener">
+      <span class="icon">📸</span><span>IG</span>
+    </a>
+  </nav>
 
-  <a class="tab" href="/privacy.html">
-    <span class="icon">🔒</span><span>Privacy</span>
-  </a>
+  <!-- =========================
+       HERO SECTION
+  ========================== -->
+  <div class="hero">
 
-  <a class="tab" href="/terms.html">
-    <span class="icon">📜</span><span>Terms</span>
-  </a>
-
-  <a class="tab" href="/support.html">
-    <span class="icon">🛠️</span><span>Support</span>
-  </a>
-
-  <a class="tab" href="/waitlist.html">
-    <span class="icon">🧪</span><span>Waitlist</span>
-  </a>
-
-  <a class="tab" href="/faq.html">
-    <span class="icon">❓</span><span>FAQ</span>
-  </a>
-
-  <a class="tab" href="https://instagram.com/memescanr" target="_blank" rel="noopener">
-    <img src="/assets/instagram.png" alt="Instagram" class="ig-icon" />
-    <span>IG</span>
-  </a>
-</nav>
-
-<!-- =========================
-     HERO SECTION
-========================== -->
-<div class="hero">
-
-  <img
-    src="/assets/memescanr-hero.png"
-    alt="MemeScanr camera mascot"
-    class="hero-logo"
-  />
-
-  <h1>MemeScanr</h1>
-
-  <p class="tagline">
-    Because your camera roll deserves therapy.
-  </p>
-
-  <p class="description">
-    MemeScanr scans your gallery, finds the memes you forgot you saved at 2 a.m.,
-    and helps you clean house like a responsible adult.
-    <br><br>
-    Delete duplicates. Hide private photos. Rescue the good stuff.
-    <br>
-    <strong>Your phone storage will finally breathe again.</strong>
-  </p>
-
-  <!-- App Store Badge -->
-  <div style="margin:22px 0;">
+    <!-- HERO MASCOT (TRANSPARENT PNG) -->
     <img
-      src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-      alt="Download on the App Store"
-      style="height:54px;opacity:.4"
-    />
-    <p style="font-size:.9rem;opacity:.75;">
-      Coming soon on the App Store
-    </p>
-  </div>
-
-  <!-- WAITLIST FORM -->
-  <form
-    name="waitlist"
-    method="POST"
-    data-netlify="true"
-    netlify-honeypot="bot-field"
-    class="waitlist-form"
-  >
-    <input type="hidden" name="form-name" value="waitlist" />
-
-    <p style="display:none;">
-      <label>
-        Don’t fill this out if you’re human:
-        <input name="bot-field" />
-      </label>
-    </p>
-
-    <input
-      type="email"
-      name="email"
-      placeholder="Enter your email for launch updates"
-      required
+      src="/assets/memescanr-hero.png"
+      alt="MemeScanr camera mascot"
+      class="hero-logo"
     />
 
-    <button type="submit" class="btn primary">
-      Join the Waitlist
-    </button>
-  </form>
-</div>
+    <h1>MemeScanr</h1>
 
-<!-- =========================
-     APP PREVIEW (REAL SCREENSHOTS)
-========================== -->
-<section>
-  <h2>What it looks like 👀</h2>
-
-  <div style="text-align:center; margin-top:14px;">
-    <button class="btn primary" id="toggleShot" type="button">
-      Switch Screenshot
-    </button>
-    <p class="description" style="font-size:.95rem; margin-top:10px;">
-      Tap to preview different screens
+    <p class="tagline">
+      Because your camera roll deserves therapy.
     </p>
-  </div>
 
-  <div style="display:flex; justify-content:center; margin-top:20px;">
-    <div class="phone-mockup">
-  <img
-    id="phoneShot"
-    src="/assets/app-screenshot-1.png"
-    alt="MemeScanr app screenshot"
-  />
-  <div class="phone-notch"></div>
-</div>
+    <p class="description">
+      MemeScanr scans your gallery, finds the memes you forgot you saved at 2 a.m.,
+      and helps you clean house like a responsible adult.
+      <br><br>
+      Delete duplicates. Hide private photos. Rescue the good stuff.
+      <br>
+      <strong>Your phone storage will finally breathe again.</strong>
+    </p>
 
-      <!-- SCREENSHOT -->
+    <!-- APP STORE BADGE (DISABLED UNTIL LIVE) -->
+    <div class="store-badge">
       <img
-        id="phoneShot"
-        src="/assets/app-screenshot-1.png"
-        alt="MemeScanr app screenshot"
-        style="
-          position:absolute;
-          inset:12px;
-          width:calc(100% - 24px);
-          height:calc(100% - 24px);
-          border-radius:28px;
-          object-fit:cover;
-        "
+        src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+        alt="Download on the App Store"
+      />
+      <p>Coming soon on the App Store</p>
+    </div>
+
+    <!-- NETLIFY WAITLIST FORM -->
+    <form
+      name="waitlist"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      class="waitlist-form"
+    >
+      <input type="hidden" name="form-name" value="waitlist">
+
+      <p class="hidden">
+        <label>Don’t fill this out if you’re human:
+          <input name="bot-field" />
+        </label>
+      </p>
+
+      <input
+        type="email"
+        name="email"
+        placeholder="Enter your email for launch updates"
+        required
       />
 
-      <!-- NOTCH -->
-      <div
-        style="
-          position:absolute;
-          top:0;
-          left:50%;
-          transform:translateX(-50%);
-          width:120px;
-          height:28px;
-          background:#020617;
-          border-radius:0 0 16px 16px;
-          z-index:2;
-        "
-      ></div>
-
-    </div>
+      <button type="submit" class="btn primary">
+        Join the Waitlist
+      </button>
+    </form>
   </div>
-</section>
 
-<!-- =========================
-     FOOTER
-========================== -->
-<footer>
-  <p>
-    <a href="/privacy.html">Privacy Policy</a> ·
-    <a href="/terms.html">Terms</a> ·
-    <a href="/support.html">Support</a> ·
-    <a href="https://instagram.com/memescanr" target="_blank" rel="noopener">
-      Instagram
-    </a>
-  </p>
-  <p>© 2026 MemeScanr. All rights reserved.</p>
-</footer>
+  <!-- =========================
+       TESTFLIGHT BETA SECTION
+  ========================== -->
+  <section>
+    <h2>Join the TestFlight Beta 🧪</h2>
 
-<!-- =========================
-     FLOATING EMOJIS
-========================== -->
-<!-- <div class="particles"></div> -->
+    <p class="description center">
+      Want early access before launch?  
+      Join the TestFlight beta and help shape MemeScanr.
+    </p>
 
-<!-- =========================
-     MOBILE BOTTOM NAV (APP STYLE)
-========================== -->
-<nav class="mobile-nav" aria-label="Mobile navigation">
-  <a href="/index.html" class="nav-item">
-    <span class="icon">🏠</span>
-    <span class="label">Home</span>
-  </a>
+    <ul>
+      <li>🚀 Early access to new features</li>
+      <li>🧠 Influence how the app evolves</li>
+      <li>🐞 Help squash bugs before launch</li>
+    </ul>
 
-  <a href="/waitlist.html" class="nav-item">
-    <span class="icon">🧪</span>
-    <span class="label">Waitlist</span>
-  </a>
+    <!-- TESTFLIGHT FORM -->
+    <form
+      name="testflight"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      class="waitlist-form"
+    >
+      <input type="hidden" name="form-name" value="testflight">
 
-  <a href="/faq.html" class="nav-item">
-    <span class="icon">❓</span>
-    <span class="label">FAQ</span>
-  </a>
+      <p class="hidden">
+        <label>Don’t fill this out if you’re human:
+          <input name="bot-field" />
+        </label>
+      </p>
 
-  <a href="/privacy.html" class="nav-item">
-    <span class="icon">🔒</span>
-    <span class="label">Privacy</span>
-  </a>
+      <input
+        type="email"
+        name="email"
+        placeholder="Email for TestFlight invite"
+        required
+      />
 
-  <a href="/terms.html" class="nav-item">
-    <span class="icon">📜</span>
-    <span class="label">Terms</span>
-  </a>
+      <button type="submit" class="btn primary">
+        Request TestFlight Access
+      </button>
+    </form>
 
-  <a href="/support.html" class="nav-item">
-    <span class="icon">🛠️</span>
-    <span class="label">Support</span>
-  </a>
+    <!-- TESTFLIGHT BADGE (DISABLED) -->
+    <div class="store-badge dim">
+      <img
+        src="https://developer.apple.com/assets/elements/badges/testflight.svg"
+        alt="TestFlight"
+      />
+      <p>Invites sent when beta opens</p>
+    </div>
+  </section>
 
-  <a
-    href="https://instagram.com/memescanr"
-    target="_blank"
-    rel="noopener"
-    class="nav-item ig"
-  >
-    <img src="/assets/instagram.png" alt="Instagram">
-    <span class="label">IG</span>
-  </a>
-</nav>
+  <!-- =========================
+       IPHONE MOCKUP + SCREENSHOT
+  ========================== -->
+  <section>
+    <h2>What it looks like 👀</h2>
 
-<!-- =========================
-     SCRIPTS
-========================== -->
-<!--
-<script>
-  // Floating emoji animation
-  const emojis = ["😂","✨","📸","🧹","😎","🔥"];
-  const container = document.querySelector(".particles");
+    <div class="phone-wrapper">
+      <div class="phone-frame">
+        <img
+          src="/assets/app-screenshot-1.png"
+          alt="MemeScanr app screenshot"
+          class="phone-screen"
+        />
+        <div class="phone-notch"></div>
+      </div>
+    </div>
+  </section>
 
-  for (let i = 0; i < 14; i++) {
-    const e = document.createElement("span");
-    e.textContent = emojis[Math.floor(Math.random() * emojis.length)];
-    e.style.left = Math.random() * 100 + "vw";
-    e.style.animationDuration = 8 + Math.random() * 10 + "s";
-    e.style.fontSize = 14 + Math.random() * 18 + "px";
-    container.appendChild(e);
-  }
+  <!-- =========================
+       FEATURES
+  ========================== -->
+  <section>
+    <h2>Why you’ll love it</h2>
+    <ul>
+      <li>😂 Automatically detects meme overload</li>
+      <li>🧹 Cleans duplicates and clutter fast</li>
+      <li>🔐 Keeps private photos discreet</li>
+      <li>⚡ No endless scrolling</li>
+      <li>😌 No regrets after deleting</li>
+    </ul>
+  </section>
 
-  // Screenshot toggle
-  const screenshots = [
-    "/assets/app-screenshot-1.png",
-    "/assets/app-screenshot-2.png"
-  ];
-  let index = 0;
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer>
+    <p>
+      <a href="/privacy.html">Privacy Policy</a> ·
+      <a href="/terms.html">Terms</a> ·
+      <a href="/support.html">Support</a> ·
+      <a href="https://instagram.com/memescanr" target="_blank" rel="noopener">
+        Instagram
+      </a>
+    </p>
+    <p>© 2026 MemeScanr. All rights reserved.</p>
+  </footer>
 
-  document.getElementById("toggleShot").addEventListener("click", () => {
-    index = (index + 1) % screenshots.length;
-    document.getElementById("phoneShot").src = screenshots[index];
-  });
+  <!-- =========================
+       FLOATING FUN PARTICLES
+  ========================== -->
+  <div class="particles"></div>
 
-  // Auto-active mobile tab
-  const current = location.pathname;
-  document.querySelectorAll('.mobile-nav .nav-item').forEach(link => {
-    if (link.getAttribute('href') === current) {
-      link.classList.add('active');
+  <script>
+    const emojis = ["😂","✨","📸","🧹","😎","🔥"];
+    const container = document.querySelector(".particles");
+
+    for (let i = 0; i < 14; i++) {
+      const e = document.createElement("span");
+      e.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+      e.style.left = Math.random() * 100 + "vw";
+      e.style.animationDuration = 8 + Math.random() * 10 + "s";
+      e.style.fontSize = 14 + Math.random() * 18 + "px";
+      container.appendChild(e);
     }
-  });
-</script>
--->
+  </script>
 
 </body>
 </html>
