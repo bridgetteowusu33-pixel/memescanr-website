@@ -47,7 +47,10 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
 }
-
+ /* 🔒 iOS Safari stacking fix */
+  position: relative;
+  z-index: 0;
+}
 /* =========================
    LINKS
 ========================= */
@@ -422,14 +425,18 @@ footer {
   .nutrition-grid { grid-template-columns: 1fr; }
 }
 /* =========================
-   FLOATING EMOJI PARTICLES
+   FLOATING EMOJI PARTICLES (iOS SAFE)
 ========================= */
 
 .particles {
   position: fixed;
-  inset: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   pointer-events: none;
-  z-index: 0;
+  z-index: -1; /* 🔥 KEY FIX */
+  overflow: hidden;
 }
 
 .particles span {
@@ -437,15 +444,6 @@ footer {
   bottom: -40px;
   animation: floatUp linear infinite;
   opacity: 0.6;
-}
-
-@keyframes floatUp {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-120vh);
-  }
 }
 
 /* =========================
@@ -503,4 +501,9 @@ footer {
 
 .mobile-nav .nav-item.active .icon {
   filter: drop-shadow(0 0 6px rgba(34,197,94,0.6));
+}
+@media (max-width: 768px) {
+  .mobile-nav {
+    display: flex !important;
+  }
 }
