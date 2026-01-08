@@ -100,7 +100,7 @@
 ========================= -->
 <section>
 
-  <!-- 🔁 MOVED TO TOP FOR MOBILE -->
+  <!-- Screenshot switch at top (mobile-friendly) -->
   <div style="text-align:center; margin-bottom:16px;">
     <button class="btn primary" id="toggleShot" type="button">
       🔁 Switch App Screen
@@ -125,8 +125,6 @@
         overflow:hidden;
       "
     >
-
-      <!-- SCREENSHOT -->
       <img
         id="phoneShot"
         src="/assets/app-screenshot-1.png"
@@ -141,7 +139,6 @@
         "
       />
 
-      <!-- NOTCH -->
       <div
         style="
           position:absolute;
@@ -155,13 +152,50 @@
           z-index:2;
         "
       ></div>
-
     </div>
   </div>
 </section>
 
 <!-- =========================
-     FUN FEATURES
+     💸 STORAGE BILL SECTION (NEW)
+========================= -->
+<section>
+  <h2>About that “storage almost full” notification… 💸</h2>
+
+  <p class="description">
+    You know the one.
+    <br>
+    The polite little alert that slowly escalates into:
+    <br><br>
+    <strong>“Your iCloud storage is full. Upgrade now.”</strong>
+  </p>
+
+  <p class="description">
+    Suddenly you’re paying monthly for cloud storage
+    just to preserve:
+  </p>
+
+  <ul>
+    <li>📸 27 screenshots of the same meme</li>
+    <li>🧾 Receipts you’ll never return</li>
+    <li>📱 Accidental screenshots of your lock screen</li>
+    <li>😂 Memes that stopped being funny three phones ago</li>
+  </ul>
+
+  <p class="description">
+    MemeScanr helps you clean up the junk
+    so you can free real storage —
+    and maybe stop Apple from quietly charging you
+    for memes you forgot existed.
+  </p>
+
+  <p class="description">
+    <strong>Save space. Save money. Cancel that sneaky upgrade.</strong>
+  </p>
+</section>
+
+<!-- =========================
+     FEATURES
 ========================= -->
 <section>
   <h2>Why people are excited about MemeScanr ✨</h2>
@@ -176,19 +210,21 @@
 </section>
 
 <!-- =========================
-     TRUST SECTION
+     TRUST
 ========================= -->
 <section>
   <h2>Built for the App Store. Not the data market.</h2>
 
   <p class="description">
     MemeScanr was designed to pass App Store review without gymnastics.
-    Your photos stay on your device. We don’t sell data.
-    We don’t track you across apps.
+    Your photos stay on your device.
+    We don’t sell data.
+    We don’t follow you around the internet.
   </p>
 
   <p class="description">
-    The goal is simple: help you clean your gallery,
+    The goal is simple:
+    help you clean your gallery —
     not build a surveillance empire.
   </p>
 </section>
@@ -208,7 +244,7 @@
 </footer>
 
 <!-- =========================
-     MOBILE BOTTOM NAV
+     MOBILE NAV
 ========================= -->
 <nav class="mobile-nav" aria-label="Mobile navigation">
   <a href="/index.html" class="nav-item active">
@@ -237,7 +273,7 @@
 ========================= -->
 <script>
   /* Floating emojis */
-  const emojis = ["😂","✨","📸","🧹","🔥","😎"];
+  const emojis = ["😂","✨","📸","🧹","🔥","😎","💸"];
   const container = document.querySelector(".particles");
 
   for (let i = 0; i < 14; i++) {
