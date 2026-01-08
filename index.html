@@ -4,222 +4,126 @@
   <meta charset="UTF-8" />
   <title>MemeScanr – Because your camera roll deserves therapy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- FAVICON -->
-  <link rel="icon" type="image/png" href="/assets/favicon.png">
-
-  <!-- MAIN STYLES -->
-  <link rel="stylesheet" href="/style.css?v=5">
+  <link rel="icon" href="/assets/favicon.png" />
+  <link rel="stylesheet" href="/style.css?v=FINAL" />
 </head>
 
 <body>
 
-  <!-- =========================
-       SIDE TABS NAVIGATION
-  ========================== -->
-  <nav class="side-tabs" aria-label="Site navigation">
-    <a class="tab active" href="/index.html">
-      <span class="icon">🏠</span><span>Home</span>
-    </a>
-    <a class="tab" href="/privacy.html">
-      <span class="icon">🔒</span><span>Privacy</span>
-    </a>
-    <a class="tab" href="/terms.html">
-      <span class="icon">📜</span><span>Terms</span>
-    </a>
-    <a class="tab" href="/support.html">
-      <span class="icon">🛠️</span><span>Support</span>
-    </a>
-    <a class="tab" href="https://instagram.com/memescanr" target="_blank" rel="noopener">
-      <span class="icon">📸</span><span>IG</span>
-    </a>
-  </nav>
+<!-- =========================
+     FLOATING EMOJIS (BACKGROUND)
+========================= -->
+<div class="particles" aria-hidden="true"></div>
 
-  <!-- =========================
-       HERO SECTION
-  ========================== -->
-  <div class="hero">
+<!-- =========================
+     DESKTOP SIDE NAV
+========================= -->
+<nav class="side-tabs">
+  <a class="tab active" href="/index.html">🏠 Home</a>
+  <a class="tab" href="/waitlist.html">🧪 Waitlist</a>
+  <a class="tab" href="/faq.html">❓ FAQ</a>
+  <a class="tab" href="/privacy.html">🔒 Privacy</a>
+  <a class="tab" href="/terms.html">📜 Terms</a>
+  <a class="tab" href="/support.html">🛠️ Support</a>
+  <a class="tab" href="https://instagram.com/memescanr" target="_blank">
+    <img src="/assets/instagram.png" class="ig-icon" /> IG
+  </a>
+</nav>
 
-    <!-- HERO MASCOT (TRANSPARENT PNG) -->
-    <img
-      src="/assets/memescanr-hero.png"
-      alt="MemeScanr camera mascot"
-      class="hero-logo"
-    />
+<!-- =========================
+     HERO
+========================= -->
+<section class="hero">
+  <img src="/assets/memescanr-hero.png" class="hero-logo" alt="MemeScanr mascot" />
 
-    <h1>MemeScanr</h1>
+  <h1>MemeScanr</h1>
+  <p class="tagline">Because your camera roll deserves therapy.</p>
 
-    <p class="tagline">
-      Because your camera roll deserves therapy.
-    </p>
+  <p class="description">
+    MemeScanr scans your gallery, finds the memes you forgot you saved at 2 a.m.,
+    and helps you clean house like a responsible adult.
+    <br /><strong>Your phone storage will finally breathe again.</strong>
+  </p>
 
-    <p class="description">
-      MemeScanr scans your gallery, finds the memes you forgot you saved at 2 a.m.,
-      and helps you clean house like a responsible adult.
-      <br><br>
-      Delete duplicates. Hide private photos. Rescue the good stuff.
-      <br>
-      <strong>Your phone storage will finally breathe again.</strong>
-    </p>
+  <img
+    class="appstore-badge"
+    src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+    alt="Download on the App Store"
+  />
 
-    <!-- APP STORE BADGE (DISABLED UNTIL LIVE) -->
-    <div class="store-badge">
-      <img
-        src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-        alt="Download on the App Store"
-      />
-      <p>Coming soon on the App Store</p>
-    </div>
+  <form class="waitlist-form" name="waitlist" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="waitlist" />
+    <input type="email" name="email" placeholder="Enter your email" required />
+    <button class="btn primary" type="submit">Join the Waitlist</button>
+  </form>
+</section>
 
-    <!-- NETLIFY WAITLIST FORM -->
-    <form
-      name="waitlist"
-      method="POST"
-      data-netlify="true"
-      netlify-honeypot="bot-field"
-      class="waitlist-form"
-    >
-      <input type="hidden" name="form-name" value="waitlist">
+<!-- =========================
+     APP PREVIEW
+========================= -->
+<section>
+  <h2>What it looks like 👀</h2>
 
-      <p class="hidden">
-        <label>Don’t fill this out if you’re human:
-          <input name="bot-field" />
-        </label>
-      </p>
-
-      <input
-        type="email"
-        name="email"
-        placeholder="Enter your email for launch updates"
-        required
-      />
-
-      <button type="submit" class="btn primary">
-        Join the Waitlist
-      </button>
-    </form>
+  <div class="phone-mockup">
+    <img id="phoneShot" src="/assets/app-screenshot-1.png" alt="App screenshot" />
+    <div class="phone-notch"></div>
   </div>
 
-  <!-- =========================
-       TESTFLIGHT BETA SECTION
-  ========================== -->
-  <section>
-    <h2>Join the TestFlight Beta 🧪</h2>
+  <div class="center">
+    <button class="btn primary" id="toggleShot">Switch Screenshot</button>
+  </div>
+</section>
 
-    <p class="description center">
-      Want early access before launch?  
-      Join the TestFlight beta and help shape MemeScanr.
-    </p>
+<!-- =========================
+     FOOTER
+========================= -->
+<footer>
+  <p>
+    <a href="/privacy.html">Privacy</a> ·
+    <a href="/terms.html">Terms</a> ·
+    <a href="/support.html">Support</a>
+  </p>
+  <p>© 2026 MemeScanr</p>
+</footer>
 
-    <ul>
-      <li>🚀 Early access to new features</li>
-      <li>🧠 Influence how the app evolves</li>
-      <li>🐞 Help squash bugs before launch</li>
-    </ul>
+<!-- =========================
+     MOBILE NAV
+========================= -->
+<nav class="mobile-nav">
+  <a href="/index.html" class="nav-item active">🏠<span>Home</span></a>
+  <a href="/waitlist.html" class="nav-item">🧪<span>Waitlist</span></a>
+  <a href="/faq.html" class="nav-item">❓<span>FAQ</span></a>
+  <a href="/privacy.html" class="nav-item">🔒<span>Privacy</span></a>
+</nav>
 
-    <!-- TESTFLIGHT FORM -->
-    <form
-      name="testflight"
-      method="POST"
-      data-netlify="true"
-      netlify-honeypot="bot-field"
-      class="waitlist-form"
-    >
-      <input type="hidden" name="form-name" value="testflight">
+<!-- =========================
+     SCRIPTS
+========================= -->
+<script>
+/* Floating emojis */
+const emojis = ["😂","✨","📸","🧹","😎","🔥"];
+const container = document.querySelector(".particles");
 
-      <p class="hidden">
-        <label>Don’t fill this out if you’re human:
-          <input name="bot-field" />
-        </label>
-      </p>
+for (let i = 0; i < 18; i++) {
+  const e = document.createElement("span");
+  e.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+  e.style.left = Math.random() * 100 + "vw";
+  e.style.animationDuration = 10 + Math.random() * 10 + "s";
+  e.style.fontSize = 14 + Math.random() * 18 + "px";
+  container.appendChild(e);
+}
 
-      <input
-        type="email"
-        name="email"
-        placeholder="Email for TestFlight invite"
-        required
-      />
-
-      <button type="submit" class="btn primary">
-        Request TestFlight Access
-      </button>
-    </form>
-
-    <!-- TESTFLIGHT BADGE (DISABLED) -->
-    <div class="store-badge dim">
-      <img
-        src="https://developer.apple.com/assets/elements/badges/testflight.svg"
-        alt="TestFlight"
-      />
-      <p>Invites sent when beta opens</p>
-    </div>
-  </section>
-
-  <!-- =========================
-       IPHONE MOCKUP + SCREENSHOT
-  ========================== -->
-  <section>
-    <h2>What it looks like 👀</h2>
-
-    <div class="phone-wrapper">
-      <div class="phone-frame">
-        <img
-          src="/assets/app-screenshot-1.png"
-          alt="MemeScanr app screenshot"
-          class="phone-screen"
-        />
-        <div class="phone-notch"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================
-       FEATURES
-  ========================== -->
-  <section>
-    <h2>Why you’ll love it</h2>
-    <ul>
-      <li>😂 Automatically detects meme overload</li>
-      <li>🧹 Cleans duplicates and clutter fast</li>
-      <li>🔐 Keeps private photos discreet</li>
-      <li>⚡ No endless scrolling</li>
-      <li>😌 No regrets after deleting</li>
-    </ul>
-  </section>
-
-  <!-- =========================
-       FOOTER
-  ========================== -->
-  <footer>
-    <p>
-      <a href="/privacy.html">Privacy Policy</a> ·
-      <a href="/terms.html">Terms</a> ·
-      <a href="/support.html">Support</a> ·
-      <a href="https://instagram.com/memescanr" target="_blank" rel="noopener">
-        Instagram
-      </a>
-    </p>
-    <p>© 2026 MemeScanr. All rights reserved.</p>
-  </footer>
-
-  <!-- =========================
-       FLOATING FUN PARTICLES
-  ========================== -->
-  <div class="particles"></div>
-
-  <script>
-    const emojis = ["😂","✨","📸","🧹","😎","🔥"];
-    const container = document.querySelector(".particles");
-
-    for (let i = 0; i < 14; i++) {
-      const e = document.createElement("span");
-      e.textContent = emojis[Math.floor(Math.random() * emojis.length)];
-      e.style.left = Math.random() * 100 + "vw";
-      e.style.animationDuration = 8 + Math.random() * 10 + "s";
-      e.style.fontSize = 14 + Math.random() * 18 + "px";
-      container.appendChild(e);
-    }
-  </script>
+/* Screenshot toggle */
+const shots = [
+  "/assets/app-screenshot-1.png",
+  "/assets/app-screenshot-2.png"
+];
+let idx = 0;
+document.getElementById("toggleShot").onclick = () => {
+  idx = (idx + 1) % shots.length;
+  document.getElementById("phoneShot").src = shots[idx];
+};
+</script>
 
 </body>
 </html>
