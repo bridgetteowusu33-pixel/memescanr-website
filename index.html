@@ -227,6 +227,15 @@
 </script>
 
 </body>
+<script>
+  const current = location.pathname;
+  document.querySelectorAll('.mobile-nav .nav-item').forEach(link => {
+    if (link.getAttribute('href') === current) {
+      link.classList.add('active');
+    }
+  });
+</script>
+
  <!-- =========================
      MOBILE BOTTOM NAV (APP STYLE)
 ========================== -->
