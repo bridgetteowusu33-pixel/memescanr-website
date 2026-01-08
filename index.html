@@ -5,23 +5,16 @@
   <title>MemeScanr – Because your camera roll deserves therapy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Favicon -->
   <link rel="icon" href="/assets/favicon.png" />
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="/style.css?v=FINAL" />
+  <link rel="stylesheet" href="/style.css?v=FINAL3" />
 </head>
 
 <body>
 
-<!-- =========================
-     FLOATING EMOJIS (BACKGROUND)
-========================= -->
+<!-- FLOATING EMOJIS -->
 <div class="particles" aria-hidden="true"></div>
 
-<!-- =========================
-     DESKTOP SIDE NAV
-========================= -->
+<!-- DESKTOP SIDE NAV -->
 <nav class="side-tabs" aria-label="Site navigation">
   <a class="tab active" href="/index.html">🏠 Home</a>
   <a class="tab" href="/waitlist.html">🧪 Waitlist</a>
@@ -29,106 +22,65 @@
   <a class="tab" href="/privacy.html">🔒 Privacy</a>
   <a class="tab" href="/terms.html">📜 Terms</a>
   <a class="tab" href="/support.html">🛠️ Support</a>
-  <a class="tab" href="https://instagram.com/memescanr" target="_blank" rel="noopener">
+  <a class="tab" href="https://instagram.com/memescanr" target="_blank">
     <img src="/assets/instagram.png" class="ig-icon" /> IG
   </a>
 </nav>
 
-<!-- =========================
-     HERO
-========================= -->
+<!-- HERO -->
 <div class="hero">
-
-  <img
-    src="/assets/memescanr-hero.png"
-    alt="MemeScanr camera mascot"
-    class="hero-logo"
-  />
+  <img src="/assets/memescanr-hero.png" alt="Mascot" class="hero-logo" />
 
   <h1>MemeScanr</h1>
-
-  <p class="tagline">
-    Because your camera roll deserves therapy.
-  </p>
+  <p class="tagline">Because your camera roll deserves therapy.</p>
 
   <p class="description">
     Your phone is holding onto screenshots from 2017, 43 versions of the same meme,
     blurry receipts, accidental screenshots of your lock screen,
     and memes you laughed at once and forgot forever.
     <br><br>
-    MemeScanr finds them.
+    MemeScanr finds them.  
     You decide what lives. What goes. What gets archived.
     <br><br>
     <strong>Less clutter. More storage. Zero judgment.</strong>
   </p>
 
-  <!-- WAITLIST FORM -->
-  <form
-    name="waitlist"
-    method="POST"
-    data-netlify="true"
-    netlify-honeypot="bot-field"
-    class="waitlist-form"
-  >
+  <form name="waitlist" method="POST" data-netlify="true" class="waitlist-form">
     <input type="hidden" name="form-name" value="waitlist" />
-
-    <p style="display:none;">
-      <label>Don’t fill this out if you’re human:
-        <input name="bot-field" />
-      </label>
-    </p>
-
-    <input
-      type="email"
-      name="email"
-      placeholder="Enter your email for launch updates"
-      required
-    />
-
-    <button type="submit" class="btn primary">
-      Join the Waitlist
-    </button>
+    <input type="email" name="email" placeholder="Enter your email for launch updates" required />
+    <button type="submit" class="btn primary">Join the Waitlist</button>
   </form>
 
   <p class="description small-note">
     iOS first · Android later · No spam · Ever
   </p>
-
 </div>
 
-<!-- =========================
-     APP PREVIEW
-========================= -->
-<section>
+<!-- APP PREVIEW -->
+<section class="app-preview">
 
+  <!-- ALWAYS ABOVE PHONE -->
   <div class="screenshot-toggle">
-    <button class="btn primary" id="toggleShot" type="button">
-      🔁 Switch App Screen
-    </button>
-    <p class="description small-note">
-      Tap to preview different parts of the app
-    </p>
+    <button class="btn primary" id="toggleShot">🔁 Switch App Screen</button>
+    <p class="small-note">Tap to preview different parts of the app</p>
   </div>
-
-  <h2 class="center-title">What MemeScanr actually does 👀</h2>
 
   <div class="phone-wrap">
     <div class="phone-mockup">
-      <img
-        id="phoneShot"
-        src="/assets/app-screenshot-1.png"
-        alt="MemeScanr app screenshot"
-      />
+      <img id="phoneShot" src="/assets/app-screenshot-1.png" />
       <div class="phone-notch"></div>
+
+      <!-- FAKE STORAGE NOTIFICATION -->
+      <div class="fake-notification">
+        ⚠️ Storage Almost Full  
+        <span>Upgrade iCloud Storage</span>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- =========================
-     💸 STORAGE BILL SECTION (CENTERED SAFE)
-========================= -->
+<!-- STORAGE SECTION (CENTERED & SAFE) -->
 <section class="storage-section">
-
   <h2>About that “storage almost full” notification… 💸</h2>
 
   <p class="description">
@@ -140,10 +92,7 @@
     “Your iCloud storage is full. Upgrade now.”
   </p>
 
-  <p class="description">
-    Suddenly you’re paying monthly for cloud storage
-    just to preserve:
-  </p>
+  <p class="description">Suddenly you’re paying monthly for cloud storage just to preserve:</p>
 
   <ul class="storage-list">
     <li>📸 27 screenshots of the same meme</li>
@@ -153,24 +102,18 @@
   </ul>
 
   <p class="description">
-    MemeScanr helps you clean up the junk
-    so you can free real storage —
-    and maybe stop Apple from quietly charging you
-    for memes you forgot existed.
+    MemeScanr helps you clean up the junk so you can free real storage —
+    and maybe stop Apple from quietly charging you for memes you forgot existed.
   </p>
 
-  <p class="description">
-    <strong>Save space. Save money. Cancel that sneaky upgrade.</strong>
+  <p class="description highlight">
+    Save space. Save money. Cancel that sneaky upgrade.
   </p>
-
 </section>
 
-<!-- =========================
-     FEATURES
-========================= -->
-<section>
+<!-- FEATURES -->
+<section class="feature-section">
   <h2>Why people are excited about MemeScanr ✨</h2>
-
   <ul>
     <li>🧠 Smart meme detection (no cloud uploads)</li>
     <li>🧹 One-tap cleanup instead of endless scrolling</li>
@@ -180,29 +123,19 @@
   </ul>
 </section>
 
-<!-- =========================
-     TRUST
-========================= -->
-<section>
+<!-- TRUST -->
+<section class="trust-section">
   <h2>Built for the App Store. Not the data market.</h2>
-
   <p class="description">
     MemeScanr was designed to pass App Store review without gymnastics.
-    Your photos stay on your device.
-    We don’t sell data.
-    We don’t follow you around the internet.
+    Your photos stay on your device. We don’t sell data.
   </p>
-
   <p class="description">
-    The goal is simple:
-    help you clean your gallery —
+    The goal is simple: help you clean your gallery —
     not build a surveillance empire.
   </p>
 </section>
 
-<!-- =========================
-     FOOTER
-========================= -->
 <footer>
   <p>
     <a href="/index.html">Home</a> ·
@@ -215,47 +148,37 @@
   <p>© 2026 MemeScanr</p>
 </footer>
 
-<!-- =========================
-     MOBILE NAV (ALL TABS)
-========================= -->
-<nav class="mobile-nav" aria-label="Mobile navigation">
+<!-- MOBILE NAV -->
+<nav class="mobile-nav">
   <a href="/index.html" class="nav-item active">🏠<span>Home</span></a>
   <a href="/waitlist.html" class="nav-item">🧪<span>Waitlist</span></a>
   <a href="/faq.html" class="nav-item">❓<span>FAQ</span></a>
   <a href="/privacy.html" class="nav-item">🔒<span>Privacy</span></a>
   <a href="/terms.html" class="nav-item">📜<span>Terms</span></a>
   <a href="/support.html" class="nav-item">🛠️<span>Support</span></a>
-  <a href="https://instagram.com/memescanr" target="_blank" class="nav-item">📸<span>IG</span></a>
+  <a href="https://instagram.com/memescanr" class="nav-item">📸<span>IG</span></a>
 </nav>
 
-<!-- =========================
-     SCRIPTS
-========================= -->
 <script>
-  /* Floating emojis */
-  const emojis = ["😂","✨","📸","🧹","🔥","😎","💸"];
-  const container = document.querySelector(".particles");
+/* Floating emojis */
+const emojis=["😂","✨","📸","🧹","🔥","😎","💸"];
+const container=document.querySelector(".particles");
+for(let i=0;i<16;i++){
+  const e=document.createElement("span");
+  e.textContent=emojis[Math.floor(Math.random()*emojis.length)];
+  e.style.left=Math.random()*100+"vw";
+  e.style.animationDuration=10+Math.random()*10+"s";
+  e.style.fontSize=14+Math.random()*18+"px";
+  container.appendChild(e);
+}
 
-  for (let i = 0; i < 14; i++) {
-    const e = document.createElement("span");
-    e.textContent = emojis[Math.floor(Math.random() * emojis.length)];
-    e.style.left = Math.random() * 100 + "vw";
-    e.style.animationDuration = 8 + Math.random() * 12 + "s";
-    e.style.fontSize = 14 + Math.random() * 18 + "px";
-    container.appendChild(e);
-  }
-
-  /* Screenshot toggle */
-  const screenshots = [
-    "/assets/app-screenshot-1.png",
-    "/assets/app-screenshot-2.png"
-  ];
-  let index = 0;
-
-  document.getElementById("toggleShot").addEventListener("click", () => {
-    index = (index + 1) % screenshots.length;
-    document.getElementById("phoneShot").src = screenshots[index];
-  });
+/* Screenshot toggle */
+const shots=["/assets/app-screenshot-1.png","/assets/app-screenshot-2.png"];
+let idx=0;
+document.getElementById("toggleShot").onclick=()=>{
+  idx=(idx+1)%shots.length;
+  document.getElementById("phoneShot").src=shots[idx];
+};
 </script>
 
 </body>
