@@ -542,9 +542,8 @@ footer {
 ========================= */
 
 @media (max-width: 768px) {
-  .hero {
-    margin: 40px 16px;
-    padding: 28px 18px;
-    border-radius: 22px;
+  .phone-mockup {
+    width: 220px;
+    height: 440px;
   }
 }
