@@ -502,8 +502,14 @@ footer {
 .mobile-nav .nav-item.active .icon {
   filter: drop-shadow(0 0 6px rgba(34,197,94,0.6));
 }
+/* =========================
+   MOBILE HERO FIX
+========================= */
+
 @media (max-width: 768px) {
-  .mobile-nav {
-    display: flex !important;
+  .hero {
+    margin: 40px 16px;
+    padding: 28px 18px;
+    border-radius: 22px;
   }
 }
