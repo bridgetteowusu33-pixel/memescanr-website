@@ -56,7 +56,7 @@
     blurry receipts, accidental screenshots of your lock screen,
     and memes you laughed at once and forgot forever.
     <br><br>
-    MemeScanr finds them.  
+    MemeScanr finds them.
     You decide what lives. What goes. What gets archived.
     <br><br>
     <strong>Less clutter. More storage. Zero judgment.</strong>
@@ -71,6 +71,7 @@
     class="waitlist-form"
   >
     <input type="hidden" name="form-name" value="waitlist" />
+
     <p style="display:none;">
       <label>Don’t fill this out if you’re human:
         <input name="bot-field" />
@@ -89,7 +90,7 @@
     </button>
   </form>
 
-  <p class="description" style="font-size:.9rem; margin-top:12px;">
+  <p class="description small-note">
     iOS first · Android later · No spam · Ever
   </p>
 
@@ -100,74 +101,43 @@
 ========================= -->
 <section>
 
-  <!-- Screenshot switch at top (mobile-friendly) -->
-  <div style="text-align:center; margin-bottom:16px;">
+  <div class="screenshot-toggle">
     <button class="btn primary" id="toggleShot" type="button">
       🔁 Switch App Screen
     </button>
-    <p class="description" style="font-size:.9rem; margin-top:6px;">
-      Tap to see different parts of the app
+    <p class="description small-note">
+      Tap to preview different parts of the app
     </p>
   </div>
 
-  <h2 style="text-align:center;">What MemeScanr actually does 👀</h2>
+  <h2 class="center-title">What MemeScanr actually does 👀</h2>
 
-  <div style="display:flex; justify-content:center; margin-top:22px;">
-    <div
-      style="
-        width:260px;
-        height:520px;
-        border-radius:40px;
-        background:linear-gradient(180deg,#111827,#020617);
-        border:4px solid #1f2937;
-        box-shadow:0 30px 80px rgba(0,0,0,.6);
-        position:relative;
-        overflow:hidden;
-      "
-    >
+  <div class="phone-wrap">
+    <div class="phone-mockup">
       <img
         id="phoneShot"
         src="/assets/app-screenshot-1.png"
         alt="MemeScanr app screenshot"
-        style="
-          position:absolute;
-          inset:12px;
-          width:calc(100% - 24px);
-          height:calc(100% - 24px);
-          border-radius:28px;
-          object-fit:cover;
-        "
       />
-
-      <div
-        style="
-          position:absolute;
-          top:0;
-          left:50%;
-          transform:translateX(-50%);
-          width:120px;
-          height:28px;
-          background:#020617;
-          border-radius:0 0 16px 16px;
-          z-index:2;
-        "
-      ></div>
+      <div class="phone-notch"></div>
     </div>
   </div>
 </section>
 
 <!-- =========================
-     💸 STORAGE BILL SECTION (NEW)
+     💸 STORAGE BILL SECTION (CENTERED SAFE)
 ========================= -->
-<section>
+<section class="storage-section">
+
   <h2>About that “storage almost full” notification… 💸</h2>
 
   <p class="description">
-    You know the one.
-    <br>
+    You know the one.<br>
     The polite little alert that slowly escalates into:
-    <br><br>
-    <strong>“Your iCloud storage is full. Upgrade now.”</strong>
+  </p>
+
+  <p class="storage-quote">
+    “Your iCloud storage is full. Upgrade now.”
   </p>
 
   <p class="description">
@@ -175,7 +145,7 @@
     just to preserve:
   </p>
 
-  <ul>
+  <ul class="storage-list">
     <li>📸 27 screenshots of the same meme</li>
     <li>🧾 Receipts you’ll never return</li>
     <li>📱 Accidental screenshots of your lock screen</li>
@@ -192,6 +162,7 @@
   <p class="description">
     <strong>Save space. Save money. Cancel that sneaky upgrade.</strong>
   </p>
+
 </section>
 
 <!-- =========================
@@ -238,34 +209,23 @@
     <a href="/waitlist.html">Waitlist</a> ·
     <a href="/faq.html">FAQ</a> ·
     <a href="/privacy.html">Privacy</a> ·
-    <a href="/terms.html">Terms</a>
+    <a href="/terms.html">Terms</a> ·
+    <a href="/support.html">Support</a>
   </p>
   <p>© 2026 MemeScanr</p>
 </footer>
 
 <!-- =========================
-     MOBILE NAV
+     MOBILE NAV (ALL TABS)
 ========================= -->
 <nav class="mobile-nav" aria-label="Mobile navigation">
-  <a href="/index.html" class="nav-item active">
-    <span class="icon">🏠</span>
-    <span class="label">Home</span>
-  </a>
-
-  <a href="/waitlist.html" class="nav-item">
-    <span class="icon">🧪</span>
-    <span class="label">Waitlist</span>
-  </a>
-
-  <a href="/faq.html" class="nav-item">
-    <span class="icon">❓</span>
-    <span class="label">FAQ</span>
-  </a>
-
-  <a href="/privacy.html" class="nav-item">
-    <span class="icon">🔒</span>
-    <span class="label">Privacy</span>
-  </a>
+  <a href="/index.html" class="nav-item active">🏠<span>Home</span></a>
+  <a href="/waitlist.html" class="nav-item">🧪<span>Waitlist</span></a>
+  <a href="/faq.html" class="nav-item">❓<span>FAQ</span></a>
+  <a href="/privacy.html" class="nav-item">🔒<span>Privacy</span></a>
+  <a href="/terms.html" class="nav-item">📜<span>Terms</span></a>
+  <a href="/support.html" class="nav-item">🛠️<span>Support</span></a>
+  <a href="https://instagram.com/memescanr" target="_blank" class="nav-item">📸<span>IG</span></a>
 </nav>
 
 <!-- =========================
