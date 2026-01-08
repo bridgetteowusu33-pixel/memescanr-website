@@ -381,6 +381,12 @@ footer {
   .mobile-nav .nav-item.active {
     color: var(--green);
   }
+  
+  @media (max-width: 768px) {
+  .hero-logo {
+    width: 220px;            /* ⬅️ bigger on phones */
+  }
+}
 
   body {
     padding-bottom: 120px;
