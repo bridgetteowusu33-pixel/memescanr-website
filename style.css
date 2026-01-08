@@ -160,8 +160,9 @@ footer {
 }
 
 .hero-logo {
-  width: 140px;
-  margin-bottom: 8px;
+  width: 190px;              /* ⬅️ bigger on desktop */
+  max-width: 80%;
+  margin-bottom: 14px;
   animation: floaty 6s ease-in-out infinite;
 }
 
