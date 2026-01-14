@@ -84,7 +84,7 @@
 </section>
 
 <!-- =========================
-     CONTACT / FORMSPREE
+     CONTACT / EMAILJS FORM
 ========================= -->
 <section>
 
@@ -94,39 +94,28 @@
     No worries. We’re helpful.
   </p>
 
-  <form
-    action="https://formspree.io/f/xpqqzvab"
-    method="POST"
-    class="support-form"
-  >
-    <input type="hidden" name="_redirect" value="https://memescanr.com/thank-you.html">
-
+  <form id="support-form" class="support-form">
 
     <label>
-      Your name
+      <span>Your name</span>
       <input type="text" name="name" required>
     </label>
 
     <label>
-      Your email
+      <span>Your email</span>
       <input type="email" name="email" required>
     </label>
 
     <label>
-      What’s going on?
+      <span>What’s going on?</span>
       <textarea name="message" rows="5" required></textarea>
     </label>
 
-    <!-- Optional metadata -->
-    <input type="hidden" name="_subject" value="New MemeScanr Support Request">
-
     <button type="submit">Send message 🚀</button>
-  </form>
 
-  <p class="small-note">
-    We usually reply within 24–48 hours
-    (unless we’re debugging memes of cats).
-  </p>
+    <p id="form-status" class="small-note" style="display:none;"></p>
+
+  </form>
 
 </section>
 
@@ -173,6 +162,38 @@
     e.style.fontSize = 14 + Math.random() * 18 + "px";
     container.appendChild(e);
   }
+</script>
+
+<!-- =========================
+     EMAILJS
+========================= -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+<script>
+  (function () {
+    emailjs.init("YOUR_PUBLIC_KEY"); // 🔴 replace
+  })();
+
+  const form = document.getElementById("support-form");
+  const status = document.getElementById("form-status");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    status.style.display = "block";
+    status.textContent = "Sending… 🚀";
+
+    emailjs.sendForm(
+      "YOUR_SERVICE_ID",   // 🔴 replace
+      "YOUR_TEMPLATE_ID",  // 🔴 replace
+      this
+    ).then(() => {
+      status.textContent = "Message sent! We’ll get back to you soon 💚";
+      form.reset();
+    }).catch(() => {
+      status.textContent = "Something went wrong. Please try again.";
+    });
+  });
 </script>
 
 </body>
