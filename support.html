@@ -167,11 +167,11 @@
 <!-- =========================
      EMAILJS
 ========================= -->
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
 <script>
   (function () {
-    emailjs.init("V2uHcFfjKuFSvuO5u"); // 🔴 replace
+    emailjs.init("V2uHcFfjKuFSvuO5u"); // ✅ your PUBLIC KEY
   })();
 
   const form = document.getElementById("support-form");
@@ -184,17 +184,21 @@
     status.textContent = "Sending… 🚀";
 
     emailjs.sendForm(
-      "service_d0c6gwn",   // 🔴 replace
-      "template_9nsbbbf",  // 🔴 replace
-      this
-    ).then(() => {
+      "service_d0c6gwn",     // ✅ your SERVICE ID
+      "template_9nsbbbf",    // ✅ your TEMPLATE ID
+      form                  // ✅ IMPORTANT FIX
+    )
+    .then(function () {
       status.textContent = "Message sent! We’ll get back to you soon 💚";
       form.reset();
-    }).catch(() => {
+    })
+    .catch(function (error) {
+      console.error("EmailJS error:", error);
       status.textContent = "Something went wrong. Please try again.";
     });
   });
 </script>
+
 
 </body>
 </html>
