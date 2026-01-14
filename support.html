@@ -38,7 +38,6 @@
      HERO
 ========================= -->
 <div class="hero">
-
   <h1>Support 🛠️</h1>
 
   <p class="tagline">
@@ -46,68 +45,84 @@
   </p>
 
   <p class="description">
-    First things first:  
-    take a deep breath.  
+    First things first:<br>
+    take a deep breath.<br>
     MemeScanr is here to delete memes — not your sanity.
   </p>
-
 </div>
-
 
 <!-- =========================
      COMMON ISSUES
 ========================= -->
 <section>
-
   <h2>Common Questions We Get</h2>
 
   <ul>
     <li>
-      <strong>“Did MemeScanr delete my real photos?”</strong><br>
-      Nope. MemeScanr does <em>not</em> auto-delete real photos.  
-      You’re always in control. Always.
+      <strong>Did MemeScanr delete my real photos?</strong><br>
+      Nope. MemeScanr does <em>not</em> auto-delete real photos.
+      You’re always in control.
     </li>
 
     <li>
-      <strong>“Is this uploading my photos somewhere?”</strong><br>
-      Absolutely not. Everything happens on your device.  
-      No cloud. No spying. No creepy stuff.
+      <strong>Is this uploading my photos somewhere?</strong><br>
+      Absolutely not. Everything happens on your device.
+      No cloud. No spying.
     </li>
 
     <li>
-      <strong>“Why did it flag this as a meme?”</strong><br>
-      Because AI is smart — but not perfect.  
+      <strong>Why did it flag this as a meme?</strong><br>
+      Because AI is smart — but not perfect.
       You always get the final say.
     </li>
 
     <li>
-      <strong>“Why is this mascot judging me?”</strong><br>
-      It’s not judgment.  
-      It’s concern. And love. Mostly love.
+      <strong>Why is this mascot judging me?</strong><br>
+      It’s not judgment. It’s concern.
     </li>
   </ul>
-
 </section>
 
 <!-- =========================
-     CONTACT
+     CONTACT / FORMSPREE
 ========================= -->
 <section>
 
   <h2>Still need help?</h2>
 
   <p class="description">
-    No worries. We’re humans.  
-    Slightly sarcastic, but helpful.
+    No worries. We’re helpful.
   </p>
 
-  <p class="description">
-    📧 Email us at:<br>
-    <strong>support@memescanr.com</strong>
-  </p>
+  <form
+    action="https://formspree.io/f/xpqqzvab"
+    method="POST"
+    class="support-form"
+  >
+
+    <label>
+      Your name
+      <input type="text" name="name" required>
+    </label>
+
+    <label>
+      Your email
+      <input type="email" name="email" required>
+    </label>
+
+    <label>
+      What’s going on?
+      <textarea name="message" rows="5" required></textarea>
+    </label>
+
+    <!-- Optional metadata -->
+    <input type="hidden" name="_subject" value="New MemeScanr Support Request">
+
+    <button type="submit">Send message 🚀</button>
+  </form>
 
   <p class="small-note">
-    We reply faster than your iCloud storage warning pops up. We usually respond within 24–48 hours  
+    We usually reply within 24–48 hours
     (unless we’re debugging memes of cats).
   </p>
 
@@ -129,7 +144,7 @@
 </footer>
 
 <!-- =========================
-     MOBILE NAV (ALL TABS)
+     MOBILE NAV
 ========================= -->
 <nav class="mobile-nav" aria-label="Mobile navigation">
   <a href="/index.html" class="nav-item">🏠<span>Home</span></a>
@@ -142,10 +157,9 @@
 </nav>
 
 <!-- =========================
-     SCRIPTS
+     FLOATING EMOJIS SCRIPT
 ========================= -->
 <script>
-  /* Floating emojis */
   const emojis = ["😂","✨","📸","🧹","🔥","😎","💸"];
   const container = document.querySelector(".particles");
 
