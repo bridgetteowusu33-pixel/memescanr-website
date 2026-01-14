@@ -4,6 +4,21 @@
 
 * { box-sizing: border-box; }
 
+/* =========================
+   GLOBAL LIST RESET (NO BULLETS ANYWHERE)
+========================= */
+
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+li {
+  margin-bottom: 1.5rem;
+}
+
 :root {
   --text-main: #f9fafb;
   --text-muted: #c7cbe6;
