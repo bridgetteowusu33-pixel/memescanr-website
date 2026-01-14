@@ -171,7 +171,7 @@
 
 <script>
   (function () {
-    emailjs.init("YOUR_PUBLIC_KEY"); // 🔴 replace
+    emailjs.init("V2uHcFfjKuFSvuO5u"); // 🔴 replace
   })();
 
   const form = document.getElementById("support-form");
@@ -184,8 +184,8 @@
     status.textContent = "Sending… 🚀";
 
     emailjs.sendForm(
-      "YOUR_SERVICE_ID",   // 🔴 replace
-      "YOUR_TEMPLATE_ID",  // 🔴 replace
+      "service_d0c6gwn",   // 🔴 replace
+      "template_9nsbbbf",  // 🔴 replace
       this
     ).then(() => {
       status.textContent = "Message sent! We’ll get back to you soon 💚";
