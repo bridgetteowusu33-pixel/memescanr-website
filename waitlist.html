@@ -5,31 +5,43 @@
   <title>MemeScanr Waitlist – Your memes are nervous</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <!-- Favicon -->
   <link rel="icon" href="/assets/favicon.png" />
+
+  <!-- Styles -->
   <link rel="stylesheet" href="/style.css?v=FINAL" />
 </head>
 
 <body>
 
-<!-- FLOATING EMOJIS -->
+<!-- =========================
+     FLOATING EMOJIS
+========================= -->
 <div class="particles" aria-hidden="true"></div>
 
-<!-- DESKTOP NAV -->
-<nav class="side-tabs">
+<!-- =========================
+     DESKTOP SIDE NAV
+========================= -->
+<nav class="side-tabs" aria-label="Site navigation">
   <a class="tab" href="/index.html">🏠 Home</a>
   <a class="tab active" href="/waitlist.html">🧪 Waitlist</a>
   <a class="tab" href="/faq.html">❓ FAQ</a>
   <a class="tab" href="/privacy.html">🔒 Privacy</a>
   <a class="tab" href="/terms.html">📜 Terms</a>
   <a class="tab" href="/support.html">🛠️ Support</a>
+  <a class="tab" href="https://instagram.com/memescanr" target="_blank" rel="noopener">
+    <img src="/assets/instagram.png" class="ig-icon" /> IG
+  </a>
 </nav>
 
-<!-- HERO -->
+<!-- =========================
+     HERO
+========================= -->
 <div class="hero">
 
   <img
     src="/assets/memescanr-hero.png"
-    alt="MemeScanr mascot"
+    alt="MemeScanr mascot judging your camera roll"
     class="hero-logo"
   />
 
@@ -40,14 +52,13 @@
   </p>
 
   <p class="description">
-    Hi 👋 I’m the MemeScanr mascot.
+    Hi. 👋 I’m the MemeScanr mascot.
     <br><br>
     I live inside your phone (politely).
-    I’ve seen your screenshots.
-    All of them.
+    I’ve seen your screenshots. All of them.
     <br><br>
     The blurry memes.
-    The accidental lock-screen shots.
+    The accidental lock-screen screenshots.
     The same TikTok saved 11 times.
     The receipt from 2021 you *swore* you’d need.
     <br><br>
@@ -56,13 +67,16 @@
     I just want to help you clean up.
   </p>
 
-  <!-- SINGLE FORM (WAITLIST + TESTFLIGHT) -->
+  <!-- =========================
+       SINGLE WAITLIST / TESTFLIGHT FORM
+  ========================= -->
   <form
     name="early-access"
     method="POST"
     data-netlify="true"
+    action="/thank-you.html"
     netlify-honeypot="bot-field"
-    class="support-form"
+    class="waitlist-form"
   >
     <input type="hidden" name="form-name" value="early-access" />
 
@@ -73,76 +87,33 @@
       </label>
     </p>
 
-    <label>
-      Your name
-      <input
-        type="text"
-        name="name"
-        placeholder="What should we call you?"
-      />
-    </label>
+    <input
+      type="email"
+      name="email"
+      placeholder="Enter your email (I won’t judge)"
+      required
+    />
 
-    <label>
-      Your email
-      <input
-        type="email"
-        name="email"
-        placeholder="Where to send updates & TestFlight invites"
-        required
-      />
-    </label>
-
-    <label>
-      Why do you want early access? (optional)
-      <textarea
-        name="reason"
-        placeholder="e.g. My gallery is 47GB of chaos and I need help…"
-      ></textarea>
-    </label>
-
-    <button type="submit">
+    <button type="submit" class="btn primary">
       Join Waitlist & Request TestFlight 🚀
     </button>
   </form>
 
-  <p class="description" style="font-size:.85rem; margin-top:14px;">
-    No spam. No selling emails.
+  <p class="description" style="font-size:.9rem; margin-top:12px;">
+    No spam. No selling emails. No “hey girl” newsletters.
     <br>
     Just launch updates and early access.
-    <br><br>
+  </p>
+
+  <p class="small-note">
     Invites sent in waves · iOS only · Android coming later
   </p>
 
 </div>
 
-<!-- WHY JOIN (NO BULLETS, JUST LINES) -->
-<section>
-  <h2>Why join?</h2>
-
-  <p class="description">🧹 Be first to delete embarrassing memes quietly</p>
-  <p class="description">📸 Reclaim storage without touching real photos</p>
-  <p class="description">🧠 Smart detection — not “delete everything” chaos</p>
-  <p class="description">🔒 Your photos stay on your device</p>
-  <p class="description">😂 Emotional closure from memes you outgrew</p>
-</section>
-
-<!-- REASSURANCE -->
-<section>
-  <h2>One last thing (important)</h2>
-
-  <p class="description">MemeScanr does <strong>not</strong>:</p>
-
-  <p class="description">🚫 Upload your photos to the cloud</p>
-  <p class="description">🚫 Sell your data</p>
-  <p class="description">🚫 Judge your taste in memes (out loud)</p>
-
-  <p class="description">
-    It *does* help you clean your gallery
-    without breaking your trust — or your phone.
-  </p>
-</section>
-
-<!-- FOOTER -->
+<!-- =========================
+     FOOTER
+========================= -->
 <footer>
   <p>
     <a href="/index.html">Home</a> ·
@@ -152,6 +123,34 @@
   </p>
   <p>© 2026 MemeScanr</p>
 </footer>
+
+<!-- =========================
+     MOBILE NAV
+========================= -->
+<nav class="mobile-nav" aria-label="Mobile navigation">
+  <a href="/index.html" class="nav-item">🏠<span>Home</span></a>
+  <a href="/waitlist.html" class="nav-item active">🧪<span>Waitlist</span></a>
+  <a href="/faq.html" class="nav-item">❓<span>FAQ</span></a>
+  <a href="/privacy.html" class="nav-item">🔒<span>Privacy</span></a>
+  <a href="/terms.html" class="nav-item">📜<span>Terms</span></a>
+</nav>
+
+<!-- =========================
+     FLOATING EMOJIS SCRIPT
+========================= -->
+<script>
+  const emojis = ["😂","✨","📸","🧹","🔥","😎","💸","🧪"];
+  const container = document.querySelector(".particles");
+
+  for (let i = 0; i < 14; i++) {
+    const e = document.createElement("span");
+    e.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+    e.style.left = Math.random() * 100 + "vw";
+    e.style.animationDuration = 8 + Math.random() * 12 + "s";
+    e.style.fontSize = 14 + Math.random() * 18 + "px";
+    container.appendChild(e);
+  }
+</script>
 
 </body>
 </html>
