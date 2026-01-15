@@ -26,7 +26,16 @@ li {
   --gold: #ffd166;
   --green: #22c55e;
 }
+/* =========================
+   BRAND UTILITIES
+========================= */
 
+.brand-tm::after {
+  content: "™";
+  font-size: 0.55em;
+  vertical-align: super;
+  margin-left: 1px;
+}
 body {
   margin: 0;
 
