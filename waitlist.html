@@ -5,43 +5,31 @@
   <title>MemeScanr Waitlist – Your memes are nervous</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Favicon -->
   <link rel="icon" href="/assets/favicon.png" />
-
-  <!-- Styles -->
   <link rel="stylesheet" href="/style.css?v=FINAL" />
 </head>
 
 <body>
 
-<!-- =========================
-     FLOATING EMOJIS
-========================= -->
+<!-- FLOATING EMOJIS -->
 <div class="particles" aria-hidden="true"></div>
 
-<!-- =========================
-     DESKTOP SIDE NAV
-========================= -->
-<nav class="side-tabs" aria-label="Site navigation">
+<!-- DESKTOP NAV -->
+<nav class="side-tabs">
   <a class="tab" href="/index.html">🏠 Home</a>
   <a class="tab active" href="/waitlist.html">🧪 Waitlist</a>
   <a class="tab" href="/faq.html">❓ FAQ</a>
   <a class="tab" href="/privacy.html">🔒 Privacy</a>
   <a class="tab" href="/terms.html">📜 Terms</a>
   <a class="tab" href="/support.html">🛠️ Support</a>
-  <a class="tab" href="https://instagram.com/memescanr" target="_blank" rel="noopener">
-    <img src="/assets/instagram.png" class="ig-icon" /> IG
-  </a>
 </nav>
 
-<!-- =========================
-     HERO
-========================= -->
+<!-- HERO -->
 <div class="hero">
 
   <img
     src="/assets/memescanr-hero.png"
-    alt="MemeScanr mascot judging your camera roll"
+    alt="MemeScanr mascot"
     class="hero-logo"
   />
 
@@ -52,31 +40,31 @@
   </p>
 
   <p class="description">
-    Hi. 👋 I’m the MemeScanr mascot.
+    Hi 👋 I’m the MemeScanr mascot.
     <br><br>
     I live inside your phone (politely).
     I’ve seen your screenshots.
     All of them.
     <br><br>
-    The blurry memes.  
-    The accidental screenshots of your lock screen.  
-    The same TikTok saved 11 times.  
-    The receipt from 2021 that you *swore* you’d need.
+    The blurry memes.
+    The accidental lock-screen shots.
+    The same TikTok saved 11 times.
+    The receipt from 2021 you *swore* you’d need.
     <br><br>
     I’m not mad.
     <br>
     I just want to help you clean up.
   </p>
 
-  <!-- WAITLIST FORM -->
+  <!-- SINGLE FORM (WAITLIST + TESTFLIGHT) -->
   <form
-    name="waitlist"
+    name="early-access"
     method="POST"
     data-netlify="true"
     netlify-honeypot="bot-field"
-    class="waitlist-form"
+    class="support-form"
   >
-    <input type="hidden" name="form-name" value="waitlist" />
+    <input type="hidden" name="form-name" value="early-access" />
 
     <p style="display:none;">
       <label>
@@ -85,87 +73,68 @@
       </label>
     </p>
 
-    <input
-      type="email"
-      name="email"
-      placeholder="Enter your email (I won’t judge)"
-      required
-    />
+    <label>
+      Your name
+      <input
+        type="text"
+        name="name"
+        placeholder="What should we call you?"
+      />
+    </label>
 
-    <button type="submit" class="btn primary">
-      Save Me From My Gallery
+    <label>
+      Your email
+      <input
+        type="email"
+        name="email"
+        placeholder="Where to send updates & TestFlight invites"
+        required
+      />
+    </label>
+
+    <label>
+      Why do you want early access? (optional)
+      <textarea
+        name="reason"
+        placeholder="e.g. My gallery is 47GB of chaos and I need help…"
+      ></textarea>
+    </label>
+
+    <button type="submit">
+      Join Waitlist & Request TestFlight 🚀
     </button>
   </form>
 
-  <p class="description" style="font-size:.9rem; margin-top:12px;">
-    No spam. No selling emails. No “hey girl” newsletters.
+  <p class="description" style="font-size:.85rem; margin-top:14px;">
+    No spam. No selling emails.
     <br>
     Just launch updates and early access.
+    <br><br>
+    Invites sent in waves · iOS only · Android coming later
   </p>
 
 </div>
 
-<!-- =========================
-     WHY JOIN
-========================= -->
+<!-- WHY JOIN (NO BULLETS, JUST LINES) -->
 <section>
-  <h2>Why join the waitlist?</h2>
+  <h2>Why join?</h2>
 
-  <ul>
-    <li>🧹 Be first to delete embarrassing memes quietly</li>
-    <li>📸 Reclaim storage without touching real photos</li>
-    <li>🧠 Smart detection — not “delete everything” chaos</li>
-    <li>🔒 Your photos stay on your device</li>
-    <li>😂 Emotional closure from memes you outgrew</li>
-  </ul>
+  <p class="description">🧹 Be first to delete embarrassing memes quietly</p>
+  <p class="description">📸 Reclaim storage without touching real photos</p>
+  <p class="description">🧠 Smart detection — not “delete everything” chaos</p>
+  <p class="description">🔒 Your photos stay on your device</p>
+  <p class="description">😂 Emotional closure from memes you outgrew</p>
 </section>
 
-<!-- =========================
-     TESTFLIGHT
-========================= -->
-<section>
-  <h2>Feeling brave? 🧪</h2>
-
-  <p class="description">
-    If you’re the “I like trying apps before they’re cool” type,
-    you can request early TestFlight access.
-    <br><br>
-    Expect unfinished edges, occasional bugs,
-    and the satisfaction of saying
-    <strong>“I was here before launch.”</strong>
-  </p>
-
-  <div style="text-align:center; margin-top:18px;">
-    <a
-      href="https://testflight.apple.com"
-      target="_blank"
-      rel="noopener"
-      class="btn primary"
-    >
-      Request TestFlight Access
-    </a>
-
-    <p class="description" style="font-size:.85rem; margin-top:10px;">
-      Invites sent in waves · iOS only · Android coming later
-    </p>
-  </div>
-</section>
-
-<!-- =========================
-     REASSURANCE
-========================= -->
+<!-- REASSURANCE -->
 <section>
   <h2>One last thing (important)</h2>
 
-  <p class="description">
-    MemeScanr does not:
-  </p>
+  <p class="description">MemeScanr does <strong>not</strong>:</p>
 
-  <ul>
-    <li>🚫 Upload your photos to the cloud</li>
-    <li>🚫 Sell your data</li>
-    <li>🚫 Judge your taste in memes (out loud)</li>
-  </ul>
+  <p class="description">🚫 Upload your photos to the cloud</p>
+  <p class="description">🚫 Sell your data</p>
+  <p class="description">🚫 Judge your taste in memes (out loud)</p>
 
   <p class="description">
     It *does* help you clean your gallery
@@ -173,9 +142,7 @@
   </p>
 </section>
 
-<!-- =========================
-     FOOTER
-========================= -->
+<!-- FOOTER -->
 <footer>
   <p>
     <a href="/index.html">Home</a> ·
@@ -186,18 +153,5 @@
   <p>© 2026 MemeScanr</p>
 </footer>
 
-<!-- =========================
-     MOBILE NAV
-========================= -->
-<nav class="mobile-nav" aria-label="Mobile navigation">
-  <a href="/index.html" class="nav-item">
-    <span class="icon">🏠</span>
-    <span class="label">Home</span>
-  </a>
-
-  <a href="/waitlist.html" class="nav-item active">
-    <span class="icon">🧪</span>
-    <span class="label">Waitlist</span>
-  </a>
-
-  <a href="/
+</body>
+</html>
