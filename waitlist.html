@@ -60,7 +60,7 @@
     The blurry memes.
     The accidental lock-screen screenshots.
     The same TikTok saved 11 times.
-    The receipt from 2021 you *swore* you’d need.
+    The receipt from 2021 you <em>swore</em> you’d need.
     <br><br>
     I’m not mad.
     <br>
@@ -76,10 +76,11 @@
     data-netlify="true"
     action="/thank-you.html"
     netlify-honeypot="bot-field"
-    class="waitlist-form"
+    class="support-form"
   >
     <input type="hidden" name="form-name" value="early-access" />
 
+    <!-- Honeypot -->
     <p style="display:none;">
       <label>
         Don’t fill this out if you’re human:
@@ -87,29 +88,108 @@
       </label>
     </p>
 
-    <input
-      type="email"
-      name="email"
-      placeholder="Enter your email (I won’t judge)"
-      required
-    />
+    <label>
+      <span>Your name</span>
+      <input
+        type="text"
+        name="name"
+        placeholder="What should we call you?"
+      />
+    </label>
 
-    <button type="submit" class="btn primary">
-      Join Waitlist & Request TestFlight 🚀
+    <label>
+      <span>Your email</span>
+      <input
+        type="email"
+        name="email"
+        placeholder="Where to send updates & invites"
+        required
+      />
+    </label>
+
+    <label>
+      <span>Why do you want early access? (optional)</span>
+      <textarea
+        name="reason"
+        placeholder="e.g., My gallery is 47GB of chaos and I need help… (Leave blank if you just want waitlist updates)"
+      ></textarea>
+    </label>
+
+    <button type="submit">
+      Join Waitlist & Request Access 🚀
     </button>
   </form>
 
-  <p class="description" style="font-size:.9rem; margin-top:12px;">
-    No spam. No selling emails. No “hey girl” newsletters.
+  <p class="small-note" style="margin-top:14px;">
+    No spam. No selling emails. Just launch updates and early access.
     <br>
-    Just launch updates and early access.
+    Invites sent in waves · iOS only · Android coming later
   </p>
+
+</div>
+<!-- =========================
+     WHY JOIN
+========================= -->
+<section>
+
+  <h2>Why join the waitlist?</h2>
+
+  <p class="description">🧹 Be first to delete embarrassing memes quietly</p>
+  <p class="description">📸 Reclaim storage without touching real photos</p>
+  <p class="description">🧠 Smart detection — not “delete everything” chaos</p>
+  <p class="description">🔒 Your photos stay on your device</p>
+  <p class="description">😂 Emotional closure from memes you outgrew</p>
+
+</section>
+
+<!-- =========================
+     TESTFLIGHT CTA
+========================= -->
+<section>
+
+  <h2>Feeling brave? 🧪</h2>
+
+  <p class="description">
+    If you’re the “I like trying apps before they’re cool” type,
+    you can request early TestFlight access.
+  </p>
+
+  <p class="description">
+    Expect unfinished edges, occasional bugs, and the satisfaction
+    of saying <strong>“I was here before launch.”</strong>
+  </p>
+
+  <div style="margin-top:18px;">
+    <a
+      href="#top"
+      class="btn primary"
+    >
+      Request TestFlight Access
+    </a>
+  </div>
 
   <p class="small-note">
     Invites sent in waves · iOS only · Android coming later
   </p>
 
-</div>
+</section>
+
+<!-- =========================
+     REASSURANCE
+========================= -->
+<section>
+
+  <h2>One last thing (important)</h2>
+
+  <p class="description">
+    MemeScanr does not:
+  </p>
+
+  <p class="description">🚫 Upload your photos to the cloud</p>
+  <p class="description">🚫 Sell your data</p>
+  <p class="description">🚫 Judge your taste in memes (out loud)</p>
+
+</section>
 
 <!-- =========================
      FOOTER
