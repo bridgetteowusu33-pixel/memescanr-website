@@ -2,30 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Message Sent – MemeScanr</title>
+  <title>You're in the Beta Queue – MemeScanr</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="/style.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/favicon.png" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/style.css?v=FINAL" />
 </head>
 
 <body>
 
-<div class="particles"></div>
+<!-- =========================
+     FLOATING EMOJIS (BACKGROUND)
+========================= -->
+<div class="particles" aria-hidden="true"></div>
 
+<!-- =========================
+     HERO / THANK YOU
+========================= -->
 <section class="hero">
-  <h1>Message received 🚀</h1>
 
-  <p class="description">
-    Thanks for reaching out!  
-    Your message landed safely in our inbox.
+  <!-- Logo -->
+  <img
+    src="/assets/logo.png"
+    alt="MemeScanr logo"
+    class="hero-logo"
+  />
+
+  <h1>
+    You're in the beta queue! 🧪
+  </h1>
+
+  <p class="tagline">
+    Brave soul detected.
   </p>
 
   <p class="description">
-    We usually reply within <strong>24–48 hours</strong>  
-    (unless memes of cats are causing delays).
+    Thanks for requesting early <strong>TestFlight</strong> access!
   </p>
 
-  <a href="/index.html" class="btn primary">Back to Home</a>
+  <p class="description">
+    We'll send you a TestFlight invite as soon as a spot opens up.
+    Invites go out in waves, so keep an eye on your inbox.
+  </p>
+
+  <p class="description">
+    Fair warning: you might encounter the occasional bug,
+    unfinished feature, or mascot that judges you a little too hard.
+  </p>
+
+  <p class="description">
+    But hey — you'll be one of the first to try MemeScanr.
+    That's worth something, right?
+  </p>
+
+  <a href="/index.html" class="btn primary">
+    Back to Home
+  </a>
+
+  <p class="small-note">
+    iOS only for now. Android coming later.
+  </p>
+
 </section>
+
+<!-- =========================
+     FLOATING EMOJIS SCRIPT
+========================= -->
+<script>
+  const emojis = ["😂","✨","📸","🧹","🔥","😎","💸","🧪"];
+  const container = document.querySelector(".particles");
+
+  for (let i = 0; i < 14; i++) {
+    const e = document.createElement("span");
+    e.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+    e.style.left = Math.random() * 100 + "vw";
+    e.style.animationDuration = 8 + Math.random() * 12 + "s";
+    e.style.fontSize = 14 + Math.random() * 18 + "px";
+    container.appendChild(e);
+  }
+</script>
 
 </body>
 </html>
