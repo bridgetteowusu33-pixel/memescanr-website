@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>You're on the List – MemeScanr</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="/assets/favicon.png" />
+  <link rel="stylesheet" href="/style.css?v=FINAL4" />
+</head>
+
+<body>
+
+<!-- FLOATING EMOJIS -->
+<div class="particles" aria-hidden="true"></div>
+
+<!-- THANK YOU HERO -->
+<section class="hero">
+
+  <img
+    src="/assets/memescanr-hero.png"
+    alt="MemeScanr mascot"
+    class="hero-logo"
+  />
+
+  <h1>You’re on the list 🎉</h1>
+
+  <p class="tagline">
+    Your camera roll is officially on notice.
+  </p>
+
+  <p class="description">
+    Thanks for joining the MemeScanr waitlist.
+    You’ll be the first to know when we launch — and when early access opens up.
+  </p>
+
+  <p class="description">
+    No spam. No selling emails.
+    Just updates, invites, and fewer screenshots from 2017.
+  </p>
+
+  <a href="/index.html" class="btn primary">
+    Back to Home
+  </a>
+
+  <p class="small-note">
+    iOS first · Android later · Invites sent in waves
+  </p>
+
+</section>
+
+<!-- FLOATING EMOJIS SCRIPT -->
+<script>
+const emojis=["😂","✨","📸","🧹","🔥","😎","💸"];
+const c=document.querySelector(".particles");
+for(let i=0;i<14;i++){
+  const e=document.createElement("span");
+  e.textContent=emojis[Math.floor(Math.random()*emojis.length)];
+  e.style.left=Math.random()*100+"vw";
+  e.style.animationDuration=8+Math.random()*12+"s";
+  e.style.fontSize=14+Math.random()*18+"px";
+  c.appendChild(e);
+}
+</script>
+
+</body>
+</html>
