@@ -43,8 +43,16 @@
     <strong>Less clutter. More storage. Zero judgment.</strong>
   </p>
 
-  <form name="waitlist" method="POST" data-netlify="true" class="waitlist-form">
-    <input type="hidden" name="form-name" value="waitlist" />
+  <form
+  name="homepage-waitlist"
+  method="POST"
+  data-netlify="true"
+  action="/thank-you-home.html"
+  netlify-honeypot="bot-field"
+  class="waitlist-form"
+>
+
+    <input type="hidden" name="form-name" value="homepage-waitlist" />
     <input type="email" name="email" placeholder="Enter your email for launch updates" required />
     <button type="submit" class="btn primary">Join the Waitlist</button>
   </form>
