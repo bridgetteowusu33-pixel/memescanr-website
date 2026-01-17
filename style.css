@@ -440,6 +440,12 @@ footer {
   color: var(--text-dim);
   font-size: .9rem;
 }
+.footer-legal {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  line-height: 1.4;
+}
 
 /* =========================
    MOBILE NAV
