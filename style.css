@@ -220,6 +220,17 @@ footer {
 }
 
 /* =========================
+   HIGHLIGHT TEXT
+========================= */
+
+.highlight {
+  font-weight: 800;
+  color: var(--gold);
+  margin: 24px 0;
+}
+
+
+/* =========================
    BUTTONS & FORMS
 ========================= */
 
@@ -561,11 +572,6 @@ footer {
    BLOG / ARTICLE LAYOUT
 ========================= */
 
-.blog-page {
-  max-width: 1100px;
-  text-align: left;
-}
-
 .blog-page .page-panel {
   max-width: 820px;
   margin-left: auto;
@@ -592,6 +598,17 @@ footer {
 .blog-page ol li {
   margin-bottom: 1rem;
 }
+/* Gold bullet for blog lists only */
+.blog-page ul li::before {
+  content: "•";
+  color: var(--gold);
+  margin-right: 10px;
+}
+.blog-page ul li {
+  display: flex;
+  align-items: flex-start;
+}
+
 
 /* Keep hero centered */
 .blog-page .hero {
