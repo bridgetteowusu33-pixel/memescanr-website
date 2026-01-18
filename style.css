@@ -597,4 +597,34 @@ footer {
 .blog-page .hero {
   text-align: center;
 }
+/* =========================
+   BLOG / ARTICLE OVERRIDE
+========================= */
+
+section.blog-page {
+  max-width: 1100px;
+  text-align: left;
+}
+
+/* Inner reading column */
+section.blog-page .page-panel {
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Ensure all text flows editorially */
+section.blog-page h2,
+section.blog-page h3,
+section.blog-page p,
+section.blog-page ul,
+section.blog-page ol,
+section.blog-page li {
+  text-align: left;
+}
+
+/* Keep hero centered */
+section.blog-page .hero {
+  text-align: center;
+}
 
