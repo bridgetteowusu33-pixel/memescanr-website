@@ -557,4 +557,44 @@ footer {
   opacity: 0.75;
   margin-top: 6px;
 }
+/* =========================
+   BLOG / ARTICLE LAYOUT
+========================= */
+
+.blog-page {
+  max-width: 1100px;
+  text-align: left;
+}
+
+.blog-page .page-panel {
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Typography tuning for reading */
+.blog-page h2 {
+  text-align: left;
+  margin-top: 64px;
+  margin-bottom: 16px;
+}
+
+.blog-page p,
+.blog-page ul,
+.blog-page ol {
+  text-align: left;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+/* Lists feel more editorial */
+.blog-page ul li,
+.blog-page ol li {
+  margin-bottom: 1rem;
+}
+
+/* Keep hero centered */
+.blog-page .hero {
+  text-align: center;
+}
 
