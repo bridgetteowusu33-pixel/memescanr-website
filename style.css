@@ -64,6 +64,20 @@ body {
   line-height: 1.55;
   letter-spacing: -0.015em;
 }
+/* =========================
+   GLOBAL LINK STYLES
+========================= */
+
+a {
+  color: var(--green);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--gold);
+  text-decoration: underline;
+}
 
 /* =========================
    GLOBAL CENTERING (ALL PAGES)
@@ -644,4 +658,37 @@ section.blog-page li {
 section.blog-page .hero {
   text-align: center;
 }
+
+/* =========================
+   GLOBAL LINK STYLES
+========================= */
+
+a {
+  color: var(--green);
+  font-weight: 600;
+  text-decoration: underline;
+  transition: color 0.15s ease;
+}
+
+
+/* =========================
+   JUMP LINKS (BLOG TOC)
+========================= */
+
+.jump-links a {
+  font-weight: 700;
+}
+
+a.btn,
+.btn a {
+  text-decoration: none;
+}
+a {
+  transition: color 0.15s ease;
+}
+a:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 2px;
+}
+
 
