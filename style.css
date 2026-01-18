@@ -478,7 +478,7 @@ footer {
     font-size: 12px;
     text-decoration: none;
     font-weight: 600;
-    text-align: center;
+    
   }
 
   .mobile-nav .nav-item.active {
@@ -493,3 +493,68 @@ footer {
     padding-bottom: 120px;
   }
 }
+/* =========================
+   DISCOVER HERO
+========================= */
+
+.discover-hero {
+  max-width: 900px;
+  margin: 90px auto 60px;
+  padding: 48px 28px;
+  text-align: center;
+  background: rgba(0,0,0,0.35);
+  border-radius: 36px;
+  box-shadow: 0 30px 90px rgba(0,0,0,0.6);
+}
+
+.discover-hero h1 {
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  font-weight: 900;
+  margin: 18px 0 12px;
+  letter-spacing: -0.02em;
+}
+
+.discover-hero .tagline {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+
+/* =========================
+   SOFT CTA
+========================= */
+
+.soft-cta {
+  margin: 70px auto;
+  padding: 28px 24px;
+  max-width: 760px;
+  border-radius: 22px;
+  background: rgba(255,255,255,0.06);
+  text-align: center;
+}
+
+.soft-cta-text {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.soft-cta-link {
+  display: inline-block;
+  font-weight: 800;
+  color: #22c55e;
+  text-decoration: none;
+  font-size: 1.05rem;
+}
+
+.soft-cta-link:hover {
+  text-decoration: underline;
+}
+
+.soft-cta-note {
+  font-size: 0.85rem;
+  opacity: 0.75;
+  margin-top: 6px;
+}
+
