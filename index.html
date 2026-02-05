@@ -6,9 +6,9 @@
 
   <!-- SEO -->
   <title>MemeScanr™ – Clean up memes & screenshots (iOS)</title>
-  <meta name="description" content="MemeScanr™ helps you find and delete memes, screenshots, duplicates, and clutter—without touching real photos. Privacy-first, on-device iOS app." />
+  <meta name="description" content="MemeScanr™ helps you find and delete memes, screenshots, duplicates, Similar clusters, and clutter—privacy-first and on-device. Optional Backroom + Premium video Boost." />
   <meta name="robots" content="index, follow" />
-  <meta name="robots" content="max-image-preview:large">
+  <meta name="robots" content="max-image-preview:large" />
   <link rel="canonical" href="https://memescanr.com/" />
 
   <!-- Open Graph (Google / Facebook / iMessage) -->
@@ -56,16 +56,15 @@
   <a class="tab" href="/privacy.html">🔒 Privacy</a>
   <a class="tab" href="/terms.html">📜 Terms</a>
   <a class="tab" href="/support.html">🛠️ Support</a>
-  <a class="tab" href="https://instagram.com/memescanr" target="_blank">
-    <img src="/assets/instagram.png" class="ig-icon" /> IG
+  <a class="tab" href="https://instagram.com/memescanr" target="_blank" rel="noopener">
+    <img src="/assets/instagram.png" class="ig-icon" alt="Instagram" /> IG
   </a>
 </nav>
 
 <!-- HERO -->
 <div class="hero">
-  <img src="/assets/memescanr-hero.png" alt="Mascot" class="hero-logo" />
-  <h1><span class="brand-tm">MemeScanr</span>
-</h1>
+  <img src="/assets/memescanr-hero.png" alt="MemeScanr mascot" class="hero-logo" />
+  <h1><span class="brand-tm">MemeScanr</span></h1>
   <p class="tagline">Because your camera roll deserves therapy.</p>
 
   <p class="description">
@@ -73,21 +72,19 @@
     blurry receipts, accidental screenshots of your lock screen,
     and memes you laughed at once and forgot forever.
     <br><br>
-    <span class="brand-tm">MemeScanr</span>
- finds them. You decide what lives. What goes. What gets archived.
+    <span class="brand-tm">MemeScanr</span> finds the clutter. You decide what stays.
     <br><br>
     <strong>Less clutter. More storage. Zero judgment.</strong>
   </p>
 
   <form
-  name="homepage-waitlist"
-  method="POST"
-  data-netlify="true"
-  action="/thank-you-home.html"
-  netlify-honeypot="bot-field"
-  class="waitlist-form"
->
-
+    name="homepage-waitlist"
+    method="POST"
+    data-netlify="true"
+    action="/thank-you-home.html"
+    netlify-honeypot="bot-field"
+    class="waitlist-form"
+  >
     <input type="hidden" name="form-name" value="homepage-waitlist" />
     <input type="email" name="email" placeholder="Enter your email for launch updates" required />
     <button type="submit" class="btn primary">Join the Waitlist</button>
@@ -105,11 +102,11 @@
 
   <div class="phone-wrap">
     <div class="phone-mockup">
-      <img id="phoneShot" src="/assets/app-screenshot-1.png" />
+      <img id="phoneShot" src="/assets/app-screenshot-1.png" alt="MemeScanr app screenshot preview" />
       <div class="phone-notch"></div>
 
       <!-- FAKE STORAGE NOTIFICATION -->
-      <div class="storage-toast">
+      <div class="storage-toast" aria-hidden="true">
         <strong>Storage Almost Full</strong>
         <span>Upgrade iCloud Storage</span>
       </div>
@@ -143,49 +140,69 @@
     </ul>
 
     <p class="description">
-      <span class="brand-tm">MemeScanr</span>
- helps you clean up the junk so you can free real storage —
+      <span class="brand-tm">MemeScanr</span> helps you clean up the junk so you can free real storage —
       and maybe stop Apple from quietly charging you.
     </p>
 
     <p class="highlight">
       Save space. Save money. Cancel that sneaky upgrade.
     </p>
-    
-</p>
-<p class="small-note">
-Learn how to
-<a href="/free-up-iphone-storage.html">
-free up iPhone storage without deleting memories
-</a>.
-</p>
 
+    <p class="small-note">
+      Learn how to
+      <a href="/free-up-iphone-storage.html">
+        free up iPhone storage without deleting memories
+      </a>.
+    </p>
   </section>
 
   <!-- FEATURES -->
   <section>
-    <h2>Why people are excited about <span class="brand-tm">MemeScanr</span>
- ✨</h2>
+    <h2>Everything <span class="brand-tm">MemeScanr</span> can do ✨</h2>
+
     <ul>
-      <li>🧠 Smart meme detection (no cloud uploads)</li>
-      <li>🧹 One-tap cleanup instead of endless scrolling</li>
-      <li>📸 Keeps real photos safe (no auto-deletes)</li>
-      <li>🔒 Privacy-first by design</li>
-      <li>😂 Slightly judgmental mascot (in a loving way)</li>
+      <li>🧠 <strong>Scanner:</strong> Find memes, screenshots, duplicates, and clutter (on-device).</li>
+      <li>🧩 <strong>Similar:</strong> Group look‑alike photos so you can keep the best ones.</li>
+      <li>⬇️ <strong>Downloads:</strong> Surface downloaded clutter and “why did I save this?” items.</li>
+      <li>📸 <strong>Screenshots:</strong> Review and clear old screenshot stacks fast.</li>
+      <li>📄 <strong>Docs / Camera clutter:</strong> Find blurry receipts and low‑value camera clutter for review.</li>
+      <li>🔐 <strong>Backroom:</strong> Move photos/videos into a private on‑device space (optional lock with Face ID).</li>
+      <li>📇 <strong>Contacts Cleanup:</strong> Find duplicate contacts and merge them (optional permission, on‑device).</li>
+      <li>⚡ <strong>Optimize (Boost):</strong> <em>Premium-only</em> video space saver (creates an optimized copy on-device; you choose replace original or keep both).</li>
+      <li>⭐ <strong>Review-first:</strong> Nothing deletes automatically — you approve every action.</li>
+      <li>🕶️ <strong>Privacy-first:</strong> No automatic uploads of your photo library for scanning.</li>
+    </ul>
+
+    <p class="small-note">
+      Some features depend on iOS permissions you choose to grant (Photos, optional Contacts, optional Face ID/Local Auth).
+    </p>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section>
+    <h2>How it works (no surprises)</h2>
+    <ul>
+      <li>1) You grant Photos access (Full or Limited).</li>
+      <li>2) <span class="brand-tm">MemeScanr</span> scans on-device and organizes what it finds into review groups.</li>
+      <li>3) You review, select, and confirm — delete, keep, or move to Backroom.</li>
+      <li>4) Optional: Boost videos (Premium) to save storage, with replace/keep-both controls.</li>
     </ul>
   </section>
 
   <!-- TRUST -->
   <section>
-    <h2>Built for the App Store. Not the data market.</h2>
+    <h2>Built for the App Store — not the data market.</h2>
     <p class="description">
-      <span class="brand-tm">MemeScanr</span>
- was designed to pass App Store review without gymnastics.
-      Your photos stay on your device. We don’t sell data.
+      <span class="brand-tm">MemeScanr</span> is built with Apple’s App Store guidelines in mind.
+      Scanning runs on your device, and we don’t sell your data.
     </p>
     <p class="description">
       The goal is simple: help you clean your gallery —
       not build a surveillance empire.
+    </p>
+
+    <p class="small-note">
+      Read more: <a href="/privacy.html">Privacy</a> · <a href="/faq.html">FAQ</a> · <a href="/support.html">Support</a>
     </p>
   </section>
 
@@ -208,14 +225,14 @@ free up iPhone storage without deleting memories
 </footer>
 
 <!-- MOBILE NAV -->
-<nav class="mobile-nav">
+<nav class="mobile-nav" aria-label="Mobile navigation">
   <a href="/index.html" class="nav-item active">🏠<span>Home</span></a>
   <a href="/waitlist.html" class="nav-item">🧪<span>Waitlist</span></a>
   <a href="/faq.html" class="nav-item">❓<span>FAQ</span></a>
   <a href="/privacy.html" class="nav-item">🔒<span>Privacy</span></a>
   <a href="/terms.html" class="nav-item">📜<span>Terms</span></a>
   <a href="/support.html" class="nav-item">🛠️<span>Support</span></a>
-  <a href="https://instagram.com/memescanr" class="nav-item">📸<span>IG</span></a>
+  <a href="https://instagram.com/memescanr" class="nav-item" target="_blank" rel="noopener">📸<span>IG</span></a>
 </nav>
 
 <script>
