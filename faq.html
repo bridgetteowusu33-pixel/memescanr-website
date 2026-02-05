@@ -17,9 +17,9 @@
     content="Frequently asked questions about MemeScanr — a privacy-first app that scans on-device. No automatic uploads of your photos. Sharing/export only when you choose."
   />
   <meta name="robots" content="index, follow" />
-  <meta name="robots" content="max-image-preview:large">
+  <meta name="robots" content="max-image-preview:large" />
 
-  <!-- Canonical -->
+  <!-- Canonical (Netlify pretty URL) -->
   <link rel="canonical" href="https://memescanr.com/faq" />
 
   <!-- Open Graph -->
@@ -27,7 +27,7 @@
   <meta property="og:title" content="MemeScanr FAQ – Privacy-First Cleanup App" />
   <meta
     property="og:description"
-    content="Does MemeScanr upload your photos? Is it safe? Get clear answers about on-device scanning, Backroom, and optional features."
+    content="Does MemeScanr upload your photos? What is Similar? What is Optimize/Boost (Premium)? What about Contacts cleanup? Get clear answers."
   />
   <meta property="og:url" content="https://memescanr.com/faq" />
   <meta property="og:image" content="https://memescanr.com/assets/memescanr-hero.png" />
@@ -57,74 +57,42 @@
     },
     {
       "@type": "Question",
-      "name": "How does MemeScanr detect memes and clutter?",
+      "name": "What is Similar in MemeScanr?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MemeScanr uses on-device analysis to recognize common patterns (like text overlays and screenshot-style layouts). This happens on your device and is designed to avoid uploading your media for processing."
+        "text": "Similar groups look-alike photos so you can review and keep the best ones. Grouping is done on-device and you decide what to delete or keep."
       }
     },
     {
       "@type": "Question",
-      "name": "Will MemeScanr delete photos automatically?",
+      "name": "What is Optimize (Boost)?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. You always choose what to delete, move to Backroom, or keep."
+        "text": "Optimize (Boost) is a Premium feature that can reduce video file sizes by creating an optimized copy on-device (for example converting to HEVC). You choose whether to replace the original or keep both."
       }
     },
     {
       "@type": "Question",
-      "name": "What if MemeScanr flags something incorrectly?",
+      "name": "Does Optimize upload my videos?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "You’re always in control. If something is flagged incorrectly, you can deselect it before taking any action."
+        "text": "No. Optimize runs on your device. MemeScanr does not automatically upload your videos for optimization."
       }
     },
     {
       "@type": "Question",
-      "name": "Does MemeScanr work on videos?",
+      "name": "Does MemeScanr access my contacts?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Some features support videos (for example Backroom can include videos). Feature coverage can vary by file type and device performance."
+        "text": "Only if you enable Contacts cleanup and grant Contacts permission. Contacts cleanup runs on-device to help you review duplicates and merge entries."
       }
     },
     {
       "@type": "Question",
-      "name": "Is MemeScanr App Store approved?",
+      "name": "Will MemeScanr delete anything automatically?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "MemeScanr is built with Apple’s guidelines in mind and may be distributed via TestFlight during development. App Store availability depends on Apple’s review process and rollout timing."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is MemeScanr free?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "MemeScanr offers a free experience and may include optional paid features. Any pricing is shown clearly in-app, and you won’t be charged without confirmation."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you sell my data or track me?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "MemeScanr does not sell your data and does not use advertising trackers. The app is designed to work without uploading your photo library for scanning."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is Backroom in MemeScanr?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Backroom is an on-device space inside MemeScanr for items you choose to move out of your Photos library. Backroom items are stored in the app’s private storage. MemeScanr does not operate a cloud sync for Backroom."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is Backroom cloud storage?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Backroom is stored in the app’s private on-device storage. Depending on your iOS backup settings, some app data may be included in device backups, but MemeScanr does not upload or sync Backroom to its own servers."
+        "text": "No. MemeScanr never deletes anything automatically. You always choose what to delete, move, or keep."
       }
     }
   ]
@@ -134,6 +102,9 @@
 
 <body>
 
+<!-- =========================
+     FLOATING EMOJIS (BACKGROUND)
+========================= -->
 <div class="particles" aria-hidden="true"></div>
 
 <!-- =========================
@@ -176,7 +147,7 @@
 
     <div class="page-header">
       <h1>Frequently Asked Questions</h1>
-      <p class="page-subtitle">Clear answers, no mystery switches.</p>
+      <p class="page-subtitle">Because yes, everyone asks these 😌</p>
     </div>
 
     <h2>📸 Does <span class="brand-tm">MemeScanr</span> upload my photos?</h2>
@@ -186,99 +157,71 @@
     </p>
     <p>
       Photos or videos only leave the app if you choose to share/export them using iOS sharing tools (Share Sheet),
-      or if you open external links (like Support or Terms) in your browser.
+      or if you open external links (like Support/Terms) in your browser.
     </p>
 
     <h2>🧠 How does <span class="brand-tm">MemeScanr</span> detect memes and clutter?</h2>
     <p>
       <span class="brand-tm">MemeScanr</span> uses on-device analysis to recognize patterns common in memes and clutter —
-      things like text overlays, screenshot-style layouts, and duplicate-like similarity signals.
+      like text overlays, screenshot-style layouts, and duplicate-like similarity signals.
     </p>
 
     <h2>🧹 Will it delete photos automatically?</h2>
     <p>Never without your permission.</p>
     <p>
-      <span class="brand-tm">MemeScanr</span> shows you what it finds and you decide what to delete, move, or keep.
+      <span class="brand-tm">MemeScanr</span> shows you what it finds and lets <strong>you</strong> decide what to delete,
+      move, or keep.
     </p>
 
-    <h2>😬 What if it marks something wrong?</h2>
-    <p>You’re always in control.</p>
+    <h2>🧩 What is <span class="brand-tm">Similar</span>?</h2>
     <p>
-      If <span class="brand-tm">MemeScanr</span> flags something incorrectly, deselect it before taking any action.
+      Similar groups look-alike photos so you can quickly compare and keep the best ones.
+      Grouping happens on-device, and you stay in control of what gets deleted or kept.
     </p>
 
-    <h2>📱 Does it work on videos?</h2>
+    <h2>⚡ What is Optimize (Boost)?</h2>
     <p>
-      Some features support videos (for example, Backroom can include videos). Feature coverage can vary by file type and device performance.
+      Optimize (Boost) is a <strong>Premium-only</strong> feature that can help you save space by creating an optimized copy
+      of selected videos on your device (for example converting to HEVC).
+    </p>
+    <p>
+      It’s designed to prioritize “looks the same” over aggressive compression. If the app can’t make a quality-safe result,
+      it will skip that video.
     </p>
 
-    <h2>🍎 Is this “App Store approved”?</h2>
+    <h2>🔒 Does Optimize upload my videos?</h2>
     <p>
-      <span class="brand-tm">MemeScanr</span> is built with Apple’s guidelines in mind. During development, it may be distributed via TestFlight.
-      App Store availability depends on Apple’s review process and rollout timing.
+      No. Optimize runs on your device. <span class="brand-tm">MemeScanr</span> does not automatically upload your videos for optimization.
     </p>
 
-    <h2>🧪 What’s the difference between Waitlist and TestFlight?</h2>
-    <p><strong>Waitlist:</strong> A way to request access/updates as we roll out.</p>
-    <p><strong>TestFlight:</strong> Early builds for testing that may change frequently.</p>
-
-    <h2>💰 Is <span class="brand-tm">MemeScanr</span> free?</h2>
+    <h2>🗂️ What does “Replace Original” mean? Can I keep both?</h2>
+    <p><strong>Replace Original:</strong> saves the optimized version and then tries to remove the original so you actually free storage.</p>
+    <p><strong>Keep Both:</strong> saves the optimized copy but keeps the original too.</p>
     <p>
-      <span class="brand-tm">MemeScanr</span> offers a free experience and may include optional paid features.
-      Any pricing is shown clearly in-app, and you won’t be charged without confirmation.
-    </p>
-
-    <h2>🛡️ Do you sell my data or track me?</h2>
-    <p>
-      No. <span class="brand-tm">MemeScanr</span> does not sell your data and does not use advertising trackers.
+      <span class="brand-tm">MemeScanr</span> doesn’t delete anything without asking. If iOS can’t remove the original for any reason,
+      the app keeps both.
     </p>
 
     <h2>📇 Does <span class="brand-tm">MemeScanr</span> access my contacts?</h2>
     <p>
-      Only if you enable the Contacts cleanup feature and grant Contacts permission. Contacts cleanup runs on-device.
+      Only if you enable Contacts cleanup and grant Contacts permission.
+      Contacts cleanup runs on-device to help you review and merge potential duplicates.
     </p>
 
     <h2>🔐 What is Backroom and how does it work?</h2>
     <p>
-      Backroom is a private on-device space inside <span class="brand-tm">MemeScanr</span> for items you choose to move out of your Photos library.
-    </p>
-    <p>
-      When you move something to Backroom, the app stores it in the app’s private storage. The app may also attempt to remove the original from Photos
-      (depending on your permissions and whether iOS allows the operation).
+      Backroom is a private space inside <span class="brand-tm">MemeScanr</span> for photos and videos you don’t want visible in your gallery.
+      Backroom items are stored on your device in the app’s private storage.
     </p>
 
     <h2>☁️ Is Backroom cloud storage?</h2>
     <p>
-      No. Backroom is stored in the app’s private on-device storage. <span class="brand-tm">MemeScanr</span> does not operate a cloud sync for Backroom.
-    </p>
-
-    <h2>📦 Can Backroom be included in iCloud / device backups?</h2>
-    <p>
-      iOS may back up some app data depending on your device settings. If you want Backroom items to remain only on your device,
-      review your iOS backup settings for <span class="brand-tm">MemeScanr</span>.
-    </p>
-
-    <h2>↩️ Can I restore items from Backroom later?</h2>
-    <p>Yes. You can restore Backroom items back to Photos at any time (when supported by iOS permissions).</p>
-
-    <h2>⚠️ What happens if I delete something from Backroom?</h2>
-    <p>
-      Deleting an item from Backroom permanently removes the Backroom copy stored in the app.
-      This action can’t be undone.
-    </p>
-
-    <h2>🔑 How is Backroom protected?</h2>
-    <p>
-      Backroom can be locked using Face ID / Touch ID (with iOS passcode fallback depending on your device and settings).
-    </p>
-
-    <h2>📦 Will Backroom affect my phone’s storage?</h2>
-    <p>
-      Backroom items are stored locally in the app, so storage usage depends on what you move into Backroom.
-      If you uninstall <span class="brand-tm">MemeScanr</span>, app-local Backroom storage is removed from the device.
+      No. <span class="brand-tm">MemeScanr</span> does not operate a cloud sync for Backroom.
+      Depending on your iOS backup settings, some app data may be included in device backups.
     </p>
 
     <h2>📩 I still have questions</h2>
+    <p>Totally fair.</p>
     <p>
       Reach out via the <a href="/support">Support</a> page or DM us on
       <a href="https://instagram.com/memescanr" target="_blank" rel="noopener">Instagram</a>.
@@ -310,25 +253,10 @@
      MOBILE NAV
 ========================= -->
 <nav class="mobile-nav" aria-label="Mobile navigation">
-  <a href="/" class="nav-item">
-    <span class="icon">🏠</span>
-    <span class="label">Home</span>
-  </a>
-
-  <a href="/waitlist" class="nav-item">
-    <span class="icon">🧪</span>
-    <span class="label">Waitlist</span>
-  </a>
-
-  <a href="/faq" class="nav-item active">
-    <span class="icon">❓</span>
-    <span class="label">FAQ</span>
-  </a>
-
-  <a href="/privacy" class="nav-item">
-    <span class="icon">🔒</span>
-    <span class="label">Privacy</span>
-  </a>
+  <a href="/" class="nav-item"><span class="icon">🏠</span><span class="label">Home</span></a>
+  <a href="/waitlist" class="nav-item"><span class="icon">🧪</span><span class="label">Waitlist</span></a>
+  <a href="/faq" class="nav-item active"><span class="icon">❓</span><span class="label">FAQ</span></a>
+  <a href="/privacy" class="nav-item"><span class="icon">🔒</span><span class="label">Privacy</span></a>
 </nav>
 
 <script>
