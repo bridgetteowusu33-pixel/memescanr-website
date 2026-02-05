@@ -14,22 +14,22 @@
   <!-- SEO META -->
   <meta
     name="description"
-    content="MemeScanr is a privacy-first app. All photo scanning happens on-device. No cloud uploads, no data selling, no tracking. Your photos stay yours."
+    content="MemeScanr is privacy-first. Scanning happens on-device. No automatic uploads of your photos. Sharing/export only when you choose."
   />
   <meta name="robots" content="index, follow" />
   <meta name="robots" content="max-image-preview:large">
 
   <!-- Canonical -->
-  <link rel="canonical" href="https://memescanr.com/privacy.html" />
+  <link rel="canonical" href="https://memescanr.com/privacy" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="MemeScanr™ Privacy Policy" />
   <meta
     property="og:description"
-    content="Your photos stay yours. MemeScanr scans images on-device only — no uploads, no selling data, no tracking."
+    content="Privacy-first by design. On-device scanning. No automatic uploads of your photos. Sharing only when you choose."
   />
-  <meta property="og:url" content="https://memescanr.com/privacy.html" />
+  <meta property="og:url" content="https://memescanr.com/privacy" />
   <meta property="og:image" content="https://memescanr.com/assets/memescanr-hero.png" />
 
   <!-- Twitter / X -->
@@ -37,7 +37,7 @@
   <meta name="twitter:title" content="MemeScanr™ Privacy Policy" />
   <meta
     name="twitter:description"
-    content="Privacy-first by design. MemeScanr never uploads your photos or sells your data."
+    content="Privacy-first by design. On-device scanning. No automatic uploads of your photos. Sharing only when you choose."
   />
   <meta name="twitter:image" content="https://memescanr.com/assets/memescanr-hero.png" />
 </head>
@@ -53,12 +53,12 @@
      DESKTOP SIDE NAV
 ========================= -->
 <nav class="side-tabs" aria-label="Site navigation">
-  <a class="tab" href="/index.html">🏠 Home</a>
-  <a class="tab" href="/waitlist.html">🧪 Waitlist</a>
-  <a class="tab" href="/faq.html">❓ FAQ</a>
-  <a class="tab active" href="/privacy.html">🔒 Privacy</a>
-  <a class="tab" href="/terms.html">📜 Terms</a>
-  <a class="tab" href="/support.html">🛠️ Support</a>
+  <a class="tab" href="/">🏠 Home</a>
+  <a class="tab" href="/waitlist">🧪 Waitlist</a>
+  <a class="tab" href="/faq">❓ FAQ</a>
+  <a class="tab active" href="/privacy">🔒 Privacy</a>
+  <a class="tab" href="/terms">📜 Terms</a>
+  <a class="tab" href="/support">🛠️ Support</a>
   <a
     class="tab"
     href="https://instagram.com/memescanr"
@@ -75,7 +75,7 @@
 <section class="page">
 
   <!-- Mascot -->
-  <a href="/index.html" aria-label="Go to MemeScanr home">
+  <a href="/" aria-label="Go to MemeScanr home">
     <img
       src="/assets/memescanr-hero.png"
       alt="MemeScanr mascot"
@@ -87,91 +87,141 @@
   <header class="page-header">
     <h1>Privacy Policy</h1>
     <p class="page-subtitle">Your photos stay yours. Always.</p>
-    <p class="page-meta">Last updated: January 2026</p>
+    <p class="page-meta">Last updated: February 2026</p>
   </header>
 
   <p class="description">
-    <span class="brand-tm">MemeScanr</span> is built with privacy as a core principle.
-    We believe your personal photos and data should remain fully under your control. MemeScanr retains only the data necessary to provide scanning and Backroom features. You can clear any data stored by MemeScanr by using the in-app settings “Clear Scan Results” or by uninstalling the app. Uninstalling the app or clearing data will remove references and any Backroom stored items from the app’s local storage only.
+    <span class="brand-tm">MemeScanr</span> is designed to help you review and clean up your library
+    while keeping your content under your control. <span class="brand-tm">MemeScanr</span> does not operate a cloud
+    photo-scanning service, and we do not automatically upload your photos or videos to our servers for scanning.
   </p>
 
-  <h2>What Data <span class="brand-tm">MemeScanr</span> Accesses</h2>
+  <h2>1) Summary (Plain English)</h2>
+  <div class="description">
+    <ul>
+      <li>Scanning happens on your device.</li>
+      <li><span class="brand-tm">MemeScanr</span> does not automatically upload your photos, videos, contacts, or scan results to our servers.</li>
+      <li>You can choose to share/export content using iOS sharing tools (that’s user-initiated).</li>
+      <li>Backroom stores items in the app’s private on-device storage so they don’t appear in your Photos library.</li>
+    </ul>
+  </div>
+
+  <h2>2) What Data <span class="brand-tm">MemeScanr</span> Accesses (On Your Device)</h2>
+
+  <h3>Photos (required for core features)</h3>
   <p class="description">
-    Photo access is used only to scan images in your local photo library.
-    All scanning and analysis happens on your device.
-    No photos are uploaded to external servers.
+    With Photos permission, <span class="brand-tm">MemeScanr</span> can read media from your Photos library to scan for
+    duplicates/clutter and to show previews. During scanning, the app may read basic metadata such as asset identifiers,
+    creation dates, media type, and file size.
+  </p>
+  <p class="description">
+    For certain on-device heuristics, the app may check whether a photo/video contains an embedded location tag
+    (for example, whether location metadata is present). <span class="brand-tm">MemeScanr</span> does not request or track
+    your live GPS location for scanning.
   </p>
 
-  <h2>What Data <span class="brand-tm">MemeScanr</span> Does NOT Collect</h2>
-  <p class="description">• No personal identity information</p>
-  <p class="description">• No location data</p>
-  <p class="description">• No contacts, messages, or browsing history</p>
-  <p class="description">• No advertising or tracking identifiers</p>
-
-  <h2>On-Device Processing</h2>
+  <h3>Contacts (optional)</h3>
   <p class="description">
-    <span class="brand-tm">MemeScanr</span> performs all image analysis directly on
-    your device. This ensures faster performance and protects your privacy.
-    Your photos never leave your phone.
+    If you enable the Contacts cleanup feature and grant Contacts permission,
+    <span class="brand-tm">MemeScanr</span> scans your address book on-device to identify potential duplicates and help you review/merge them.
+    <span class="brand-tm">MemeScanr</span> does not automatically upload your contacts to our servers.
   </p>
 
-  <h2>Backroom and On-Device Storage</h2>
+  <h3>Face ID / Device Authentication (optional)</h3>
   <p class="description">
-    <span class="brand-tm">MemeScanr</span>'s Backroom  is a private on-device space where you can choose to move photos and videos you don't want visible in your gallery. When you move an item to Backroom:
-
-• The item is removed from your Photos gallery.
-• A copy of the item is stored only on your device in the app’s private storage.
-• MemeScanr does not upload, sync, or share these items with any cloud services or third parties.
-• You can restore items from Backroom back to your Photos gallery at any time.
-• Deleting an item from Backroom permanently removes it from your device; this action cannot be undone.
-
-Backroom items remain on your device until you choose to restore or delete them. MemeScanr does not have access to Backroom items once they are stored locally, and we do not collect these items or any associated data.
+    If you enable Backroom locking, <span class="brand-tm">MemeScanr</span> may use Face ID / Touch ID (via iOS Local Authentication)
+    to unlock Backroom. Biometric data is handled by iOS; <span class="brand-tm">MemeScanr</span> does not receive or store your biometric data.
   </p>
 
-   <h2>Information Stored by the App</h2>
+  <h3>Notifications (optional)</h3>
   <p class="description">
-    <span class="brand-tm">MemeScanr may create and store references and metadata on your device to perform scan operations efficiently. This includes lightweight information such as asset identifiers, timestamps, and categorization for memes, duplicates, and Backroom content. This information is stored only on your device and never uploaded, shared, or backed up externally unless you explicitly choose to do so (e.g., via a share action).
+    If you enable reminders, <span class="brand-tm">MemeScanr</span> may send local notifications. Notification content is generated on-device.
   </p>
 
-
-  <h2>Email & Waitlist (Optional)</h2>
+  <h2>3) On-Device Processing (No Cloud Scanning)</h2>
   <p class="description">
-    If you voluntarily join the <span class="brand-tm">MemeScanr</span> waitlist,
-    we collect your email address solely to notify you about launch updates.
-    We do not sell or share email addresses, and they are never used for advertising.
+    <span class="brand-tm">MemeScanr</span> performs scanning and analysis on your device. This may use on-device machine learning and Apple system frameworks
+    to classify images/videos and detect patterns. Your media content is not automatically uploaded to our servers for this processing.
   </p>
 
-  <h2>Diagnostics & App Stability</h2>
+  <h2>4) What <span class="brand-tm">MemeScanr</span> Stores</h2>
   <p class="description">
-    <span class="brand-tm">MemeScanr</span> may collect anonymous diagnostic
-    information, such as crash reports, to improve app stability and performance.
-    This data does not include photos or personal content.
+    <span class="brand-tm">MemeScanr</span> stores certain data locally on your device to make the app work, such as:
+  </p>
+  <div class="description">
+    <ul>
+      <li>Scan results and lightweight metadata (e.g., identifiers, timestamps, categories/flags, scan state).</li>
+      <li>Backroom items you choose to move into Backroom (stored in the app’s private storage).</li>
+      <li>App settings and preferences.</li>
+    </ul>
+  </div>
+  <p class="description">
+    You can clear scan results and local references using in-app settings (for example, “Clear Scan Results”).
+    Uninstalling the app removes app-local data stored in the app container.
   </p>
 
-  <h2>Third-Party Services</h2>
+  <h2>5) Backroom (On-Device Private Storage)</h2>
   <p class="description">
-    <span class="brand-tm">MemeScanr</span> does not use advertising SDKs,
-    data brokers, or tracking services.
-    Limited third-party services may be used solely for app stability and diagnostics.
+    Backroom is an on-device space for items you choose to move out of your Photos library.
+    When you move an item to Backroom:
+  </p>
+  <div class="description">
+    <ul>
+      <li>The app attempts to remove the item from your Photos library so it no longer appears there.</li>
+      <li>A copy is stored in the app’s private storage on your device.</li>
+      <li>You can view, restore, or delete Backroom items inside <span class="brand-tm">MemeScanr</span>.</li>
+    </ul>
+  </div>
+  <p class="description">
+    <span class="brand-tm">MemeScanr</span> does not automatically upload or sync Backroom items to our servers.
   </p>
 
-  <h2>Children’s Privacy</h2>
+  <h2>6) When Data Can Leave the App</h2>
   <p class="description">
-    <span class="brand-tm">MemeScanr</span> does not knowingly collect personal data
-    from children under the age of 13.
-    If you believe data has been submitted in error, please contact us and we will
-    promptly delete it.
+    <span class="brand-tm">MemeScanr</span> does not automatically transmit your photo library or scan content to our servers.
+    Data can leave the app only in user-initiated cases such as:
+  </p>
+  <div class="description">
+    <ul>
+      <li>You share/export selected items via iOS sharing tools (Share Sheet).</li>
+      <li>You open external links (e.g., FAQ/Terms/Support) in your browser.</li>
+    </ul>
+  </div>
+
+  <h2>7) iCloud / Device Backups (Important)</h2>
+  <p class="description">
+    iOS may back up some app data to iCloud as part of your device backup settings. This is controlled by Apple and your iOS settings,
+    not by <span class="brand-tm">MemeScanr</span>. If you want Backroom items to remain only on your device and not in iCloud backups,
+    review your iOS backup settings for <span class="brand-tm">MemeScanr</span>.
   </p>
 
-  <h2>Photos Permissions Explanation</h2>
+  <h2>8) Third-Party Services</h2>
   <p class="description">
-    To scan media in your photo library, MemeScanr requires access to your Photos. This access is used solely to analyze and present detected clutter. MemeScanr does not transmit photos or metadata off your device, and no photo content is ever stored or shared outside the scanning process and any local Backroom storage you choose to use.
+    <span class="brand-tm">MemeScanr</span> does not use advertising SDKs, data brokers, or tracking services.
+    Some platform services may be involved when you use certain features (for example: Apple device backups, App Store review prompts,
+    or system crash reporting), but <span class="brand-tm">MemeScanr</span> does not automatically send your photo library contents to third-party servers for scanning.
   </p>
 
-  <h2>Policy Updates</h2>
+  <h2>9) Website Waitlist (Optional)</h2>
   <p class="description">
-    We may update this Privacy Policy to reflect improvements or legal requirements.
-    Any changes will be posted on this page. 
+    If you choose to join the <span class="brand-tm">MemeScanr</span> waitlist on our website, we collect the email address you provide to notify you about launch updates.
+    We do not sell email addresses and we don’t use them for advertising.
+  </p>
+
+  <h2>10) Children’s Privacy</h2>
+  <p class="description">
+    <span class="brand-tm">MemeScanr</span> is not intended for children under the age of 13, and we do not knowingly collect personal data from children.
+    If you believe data has been submitted in error, please contact us and we will promptly delete it.
+  </p>
+
+  <h2>11) Policy Updates</h2>
+  <p class="description">
+    We may update this Privacy Policy as the app evolves. Any changes will be posted on this page with a revised “Last updated” date.
+  </p>
+
+  <h2>12) Contact</h2>
+  <p class="description">
+    For privacy questions, contact us via <a href="/support">memescanr.com/support</a>.
   </p>
 
 </section>
@@ -181,12 +231,12 @@ Backroom items remain on your device until you choose to restore or delete them.
 ========================= -->
 <footer>
   <p>
-    <a href="/index.html">Home</a> ·
-    <a href="/waitlist.html">Waitlist</a> ·
-    <a href="/faq.html">FAQ</a> ·
-    <a href="/privacy.html">Privacy</a> ·
-    <a href="/terms.html">Terms</a> ·
-    <a href="/support.html">Support</a>
+    <a href="/">Home</a> ·
+    <a href="/waitlist">Waitlist</a> ·
+    <a href="/faq">FAQ</a> ·
+    <a href="/privacy">Privacy</a> ·
+    <a href="/terms">Terms</a> ·
+    <a href="/support">Support</a>
   </p>
 
   <p class="footer-legal">
@@ -199,10 +249,10 @@ Backroom items remain on your device until you choose to restore or delete them.
      MOBILE NAV
 ========================= -->
 <nav class="mobile-nav" aria-label="Mobile navigation">
-  <a href="/index.html" class="nav-item">🏠<span>Home</span></a>
-  <a href="/waitlist.html" class="nav-item">🧪<span>Waitlist</span></a>
-  <a href="/faq.html" class="nav-item">❓<span>FAQ</span></a>
-  <a href="/privacy.html" class="nav-item active">🔒<span>Privacy</span></a>
+  <a href="/" class="nav-item">🏠<span>Home</span></a>
+  <a href="/waitlist" class="nav-item">🧪<span>Waitlist</span></a>
+  <a href="/faq" class="nav-item">❓<span>FAQ</span></a>
+  <a href="/privacy" class="nav-item active">🔒<span>Privacy</span></a>
 </nav>
 
 </body>
